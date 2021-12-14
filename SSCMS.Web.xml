@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SSCMS.Web</name>
+    </assembly>
+    <members>
+        <member name="P:SSCMS.Web.Controllers.V1.AdministratorsController.LoginRequest.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SSCMS.Web.Controllers.V1.AdministratorsController.LoginRequest.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:SSCMS.Web.Controllers.V1.AdministratorsController.LoginRequest.IsAutoLogin">
+            <summary>
+            下次自动登录
+            </summary>
+        </member>
+        <member name="T:SSCMS.Web.Controllers.V1.ContentsController">
+            <summary>
+            内容操作API
+            </summary>
+        </member>
+        <member name="P:SSCMS.Web.Controllers.V1.UsersController.LoginRequest.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:SSCMS.Web.Controllers.V1.UsersController.LoginRequest.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:SSCMS.Web.Controllers.V1.UsersController.LoginRequest.IsPersistent">
+            <summary>
+            下次自动登录
+            </summary>
+        </member>
+        <member name="M:SSCMS.Web.Controllers.Wx.IndexController.CustomMessageContext.CustomMessageContext_MessageContextRemoved(System.Object,Senparc.NeuChar.Context.WeixinContextRemovedEventArgs{Senparc.NeuChar.Entities.IRequestMessageBase,Senparc.NeuChar.Entities.IResponseMessageBase})">
+            <summary>
+            当上下文过期，被移除时触发的时间
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SSCMS.Web.Controllers.Wx.IndexController.CustomMessageHandler.OnTextRequestAsync(Senparc.Weixin.MP.Entities.RequestMessageText)">
+            <summary>
+            处理文字请求
+            </summary>
+            <param name="requestMessage">请求消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:SSCMS.Web.Controllers.Wx.IndexController.FixWeixinBugWeixinResult.#ctor(Senparc.NeuChar.MessageHandlers.IMessageHandlerDocument)">
+            <summary>
+            这个类型只用于特殊阶段：目前IOS版本微信有换行的bug，\r\n会识别为2行
+            </summary>
+        </member>
+        <member name="M:SSCMS.Web.Controllers.Wx.IndexController.Get(System.Int32,Senparc.Weixin.WxOpen.Entities.Request.PostModel,System.String)">
+            <summary>
+            GET请求用于处理微信小程序后台的URL验证
+            </summary>
+        </member>
+        <member name="M:SSCMS.Web.Controllers.Wx.IndexController.Post(System.Int32,Senparc.Weixin.MP.Entities.Request.PostModel)">
+            <summary>
+            用户发送消息后，微信平台自动Post一个请求到这里
+            </summary>
+        </member>
+        <member name="M:SSCMS.Web.Controllers.Wx.TenPayController.Get(System.Int32,SSCMS.Web.Controllers.Wx.TenPayController.GetRequest)">
+            <summary>
+            获取用户的OpenId
+            </summary>
+        </member>
+    </members>
+</doc>
