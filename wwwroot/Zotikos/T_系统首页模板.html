@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>{Channel.Title} | {Stl.SiteName}</title>
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/index.css" />
+    <script src="{Stl.SiteUrl}/js/jquery.min.js"></script>
+    <script src="{Stl.SiteUrl}/js/banner.js"></script>
+    <script src="{Stl.SiteUrl}/js/banner.min.js"></script>
+    <script src="{Stl.SiteUrl}/js/wow.min.js"></script>
+    <script>
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+      new WOW().init();
+      };
+    </script>
+  </head>
+  <body>
+  <stl:include file="/include/header.html"></stl:include>
+    <!--banner开始 -->
+    <section class="topbanner">
+      <div class="banner">
+        <div id="wrapper">
+          <div class="fullwidthbanner-container">
+            <div class="fullwidthbanner">
+              <ul>
+                <stl:contents channelIndex="Banner" totalNum="3">
+                  <li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300" data-link=
+                  "javascript:void(0)"> <img src="{Content.ImageUrl}" alt="{Content.Title}" /> 
+                  </li>
+                </stl:contents>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--banner结束 -->
+    <!--项目开始 -->
+    <section class="fuwu">
+      <div class="wrap">
+        <div class="custom wow fadeInLeftBig">
+          <div class="custom-title">市场服务</div>
+          <stl:channel channelIndex="市场服务" type="Content"></stl:channel>
+        </div>
+        <div class="clearfix">
+          <stl:channels channelIndex="市场服务">
+            <div class="fuwu-list wow fadeInUpBig"> <i class="item item{Channel.ChannelIndex}" style="background:url({Channel.ImageUrl});"></i>
+              <div class="fuwu-title">{Channel.Title}</div>
+              <stl:channel type="Content" wordNum="35" ellipsis="..."></stl:channel>
+              <stl:a>阅读更多</stl:a>
+            </div>
+          </stl:channels>
+        </div>
+      </div>
+    </section>
+    <!--项目结束 -->
+    <!--产品开始 -->
+    <section class="service">
+      <div class="wrap">
+        <div class="service_item">
+          <div class="custom wow fadeInRight">
+            <div class="custom-title">制造服务</div>
+            <stl:channel channelIndex="制造服务" type="Content"></stl:channel>
+          </div>
+          <div class="service_item_one wow slideInLeft">
+            <ul>
+              <stl:contents channelIndex="制造服务" totalNum="6" scope="SelfAndChildren" order="AddDate">
+                <li>
+                  <div class="service_img"><img src="{Content.ImageUrl}" /></div>
+                  <div class="content">
+                    <div class="content_tit"><stl:content type="Title" wordNum="14" ellipsis="..."></stl:content></div>
+                    <div class="content_txt"><stl:content type="Summary" wordNum="30" ellipsis="..."></stl:content></div>
+                    <stl:a>查看更多</stl:a></div>
+                </li>
+              </stl:contents>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="{Stl.SiteUrl}/js/jquery.superslide.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+        /* 图片滚动效果 */
+        $(".service_item").slide({
+        titCell: "",
+        mainCell: ".service_item_one ul",
+        autoPage: true,
+        effect: "leftLoop",
+        autoPlay: true,
+        vis: 4
+        });  
+        });
+      </script>
+    </section>
+    <!--产品结束 -->
+    <!--about开始 -->
+    <section class="about">
+      <div class="wrap">
+        <div class="custom">
+          <div class="custom-title  wow bounce">质量保证</div>
+        </div>
+        <div class="about_content wow fadeInUpBig">
+          <stl:channel type="Content" channelIndex="质量保证"></stl:channel>
+        </div>
+        <div class="friend">
+          <div class="mr_frbox"> <img class="mr_frBtnL prev" src="{Stl.SiteUrl}/images/a_left.png" />
+            <div class="mr_frUl">
+              <ul id="mr_fu">
+                <stl:contents channelIndex="质量保证">
+                  <li><a href="javascript:;"> <img src="{Content.ImageUrl}" /></a></li>
+                </stl:contents>
+              </ul>
+            </div>
+            <img class="mr_frBtnR next" src="{Stl.SiteUrl}/images/a_right.png" /> </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function () {
+          /* 图片滚动效果 */
+          $(".mr_frbox").slide({
+          titCell: "",
+          mainCell: ".mr_frUl ul",
+          autoPage: true,
+          effect: "leftLoop",
+          autoPlay: true,
+          vis: 5
+          });  
+          });
+        </script>
+      </div>
+    </section>
+    <!--about结束 -->
+    <!--新闻开始 -->
+    <section class="news">
+      <div class="wrap">
+        <div class="custom">
+          <div class="custom-title wow bounceIn">新闻动态</div>
+          <stl:channel type="Content" channelIndex="新闻动态"></stl:channel>
+        </div>
+        <div class="news-item wow slideInUp">
+          <ul>
+            <stl:contents channelIndex="新闻动态" scope="SelfAndChildren" totalNum="4" order="AddDate">
+              <li> <span><i><stl:content type="AddDate" formatString="MM-dd"></stl:content></i><q><stl:content type="AddDate" formatString="yyyy"></stl:content></q></span>
+                <p><stl:a class="news-title"><stl:content type="Title" wordNum="31" ellipsis="..."></stl:content></stl:a><stl:content type="Summary" wordNum="31" ellipsis="..."></stl:content><stl:a class="more wow bounceInUp" data-wow-delay="0.3s">查看更多</stl:a></p>
+              </li>
+            </stl:contents>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </section>
+    <!--新闻结束 -->
+    <!--底部开始 -->
+    <stl:include file="/include/footer.html"></stl:include>
+    <!--底部结束 -->
+    <!--置顶开始-->
+    <div class="fix-nav" id="fix-nav" style="display: block;">
+      <div class="fix-nav-wrap"> <img class="i-totop" src="{Stl.SiteUrl}/images/to_top.png" />
+      </div>
+    </div>
+    <!--置顶结束 -->
+  </body>
+</html>

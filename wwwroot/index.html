@@ -1,43 +1,996 @@
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="renderer" content="webkit" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="/sitefiles/assets/images/favicon.png" rel="icon" type="image/png" />
-    <link href="/sitefiles/assets/css/ionicons-2.0.0.min.css" rel="stylesheet" type="text/css" />
-    <link href="/sitefiles/assets/css/font-awesome-4.7.0.min.css" rel="stylesheet" type="text/css" />
-    <link href="/sitefiles/assets/css/bootstrap-4.1.0.min.css" rel="stylesheet" type="text/css" />
-    <link href="/sitefiles/assets/css/siteserver.min.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div id="main" class="m-t-15 m-b-15 m-l-15 m-r-15">
-      <div class="wrapper-page">
-        <div class="card-box">
-          <h4 class="m-l-5">默认页面</h4>
-          <form method="post" class="form-horizontal m-t-20">
-            <div class="form-group row">
-              <div class="col-12">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-large btn-custom w-md"
-                  style="width: 100%;" onclick="location.href = '/ss-admin/';">
-                  进入管理后台
-                </button>
-              </div>
-            </div>
-            <hr />
-            <div class="text-muted text-center">
-              <small>Copyright &copy; SS CMS</small>
-            </div>
-          </form>
+    
+<!-- ZUI 标准版压缩后的 CSS 文件 -->
+<link rel="stylesheet" href="/zui/css/zui.min.css">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="/zui/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="/zui/js/zui.min.js"></script>
+    <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+<script src="/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+    <div id="anchor_top"></div>
+<!-- 顶部导航栏 -->
+<nav class="navbar navbar-inverse" role="navigation"
+     style="margin-bottom: 0;background-color: black;border-radius: 0;border: 0;">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">标识</a>
         </div>
-      </div>
+        <div>
+            <ul class="nav navbar-nav nav-top" style="font-size:large">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+            </ul>
+        </div>
     </div>
-  </body>
+</nav>
+<!-- 顶部导航栏结束 -->
+
+<div class="container-fluid">
+    <!-- 母版头 -->
+    <div class="row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+            <div class="container-fluid" style="margin-top: 0px; margin-bottom: 0px; ">
+                <img src="/images/148bf7ddd88766bafe822cbc79e132ec.jpeg" alt=" 图片丢失"
+                     style=" width: 100%;height: auto;" />
+                <!-- <div style="margin-top: 2px; margin-bottom: 0px;height:40px;"> </div> -->
+                
+                <ul class="nav nav-top nav-simple nav-justified" style="border: 0;background-color:azure">
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/5.html">资讯动态</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li> <a href="/channels/5.html">科技动态</a></li>
+                                
+                                    <li> <a href="/channels/6.html">财经动态</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/8.html">社会新闻</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li> <a href="/channels/8.html">企业热点</a></li>
+                                
+                                    <li> <a href="/channels/9.html">社会热点</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/11.html">全球资讯</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li> <a href="/channels/11.html">环球搜讯</a></li>
+                                
+                                    <li> <a href="/channels/12.html">国际视野</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/14.html">专题活动</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li> <a href="/channels/14.html">娱乐专题</a></li>
+                                
+                                    <li> <a href="/channels/15.html">科技专题</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-1">
+            <div class="container">
+                <div class="toolbar-icon">
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a href="Editor">
+                                <i class="icon icon-edit icon-5x"
+                                   style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="back_history()">
+                                <i class="icon icon-chevron-sign-left icon-5x"
+                                   style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#anchor_top">
+                                <i class="icon icon-chevron-sign-up icon-5x"
+                                   style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-1">
+        </div>
+    </div>
+    <!-- 母版头结束 -->
+
+    <div class="row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+            <!-- 内容 -->
+            <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
+                <!-- 内容容器 -->
+
+    <style type="text/css">
+        tr {
+            background: rgb(255 255 255)
+        }
+
+        #swiper_1.swiper {
+            width: 100%;
+        }
+
+        #swiper_1 .my-bullet-active {
+            background: #ffffff;
+            opacity: 1;
+        }
+
+        #swiper_1 .swiper-slide .swiper-caption {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            height: 25px;
+            padding-top: 0;
+            padding-bottom: 0;
+            color: #fff;
+            text-align: left;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            background-color: #000;
+            opacity: 0.5;
+        }
+
+        #swiper_1 .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        #swiper_1 .swiper-slide-a {
+            font-size: 16px;
+            text-decoration: underline;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: 11;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: #fff;
+            text-overflow: ellipsis;
+            /*值为clip表示剪切，ellipsis时为显示省略号 */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #swiper_2-pagination a {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        #swiper_2-pagination .swiper-pagination-bullet {
+            border-radius: 0%;
+            height: inherit;
+            background: unset;
+            opacity: 1;
+        }
+
+        #swiper_2-pagination .swiper-pagination-bullet-active {
+            opacity: 1;
+            background-color: #b3d4fc;
+        }
+    </style>
+
+    <!-- 内容 -->
+    <div style="margin-top: 2px;"></div>
+    <!--天气-->
+    <div class="row weather">
+        <div class="col-xs-1" style="padding-right: 0; text-align: center;">
+            <a href="#" style="white-space: nowrap;">天气：</a>
+        </div>
+        <div class="col-xs-11">
+            <marquee onMouseOut="this.start()" onMouseOver="this.stop()">
+                北京 今天：小雨 17°~24°C 无持续风向&lt;3级
+            </marquee>
+        </div>
+    </div>
+    <!--天气结束-->
+    <!-- 重要内容 -->
+    <div class="row">
+        <div class="col-xs-8">
+            <div id="swiper_1" class="swiper">
+                <div class="swiper-wrapper">
+                    
+                        <div class="swiper-slide">
+                            <a title="BAT都着力发展消费金融，相比之下有什么不同？" href="/contents/5/18.html" target="_blank">
+                                <img src="/upload/images/2017/6/15184428989.jpg" alt="BAT都着力发展消费金融，相比之下有什么不同？">
+                            </a>
+                            <div class="swiper-caption"></div>
+                            <a class="swiper-slide-a" href="/contents/5/18.html">BAT都着力发展消费金融，相比之下有什么不同？</a>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <a title="观念总是被用来打破的" href="/contents/5/17.html" target="_blank">
+                                <img src="/images/timthu.jpg" alt="观念总是被用来打破的">
+                            </a>
+                            <div class="swiper-caption"></div>
+                            <a class="swiper-slide-a" href="/contents/5/17.html">观念总是被用来打破的</a>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <a title="融资12亿的春雨CEO去世，为什么创业者的焦虑停不下来？" href="/contents/5/16.html" target="_blank">
+                                <img src="/images/ss.jpg" alt="融资12亿的春雨CEO去世，为什么创业者的焦虑停不下来？">
+                            </a>
+                            <div class="swiper-caption"></div>
+                            <a class="swiper-slide-a" href="/contents/5/16.html">融资12亿的春雨CEO去世，为什么创业者的焦虑停不下来？</a>
+                        </div>
+                    
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination" style="bottom:27px"></div><!--分页器。如果放置在swiper外面，需要自定义样式。-->
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div> <!-- 白色 -->
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div class="container">
+                <div class="department" style="margin-bottom: 1rem;">
+                    <div class="detitle">
+                        <span>企业热点</span>
+                        <a class="more" href="/channels/8.html">更多 +</a>
+                    </div>
+                    <div class="container news">
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/8/28.html">宜家开始网上卖货了，虽然一副“冷漠脸”，但北欧设计早被它带热了</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/8/25.html">ROOBO雷宇——拿到1亿美金融资之后，想让机器人帮你约滴滴，订外卖</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/8/29.html">我们一定能够找到诽谤他们和宣布他们为社会渣滓的方法</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/8/30.html">构家网颜传赞——互联网家装常被吐槽，你们想怎么避免？</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/8/26.html">在科技公司看来，福特汽车最令人羡慕的是什么？</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/8/27.html">硬件与软件的辩证关系：硬件创建新世界，软件拿走利润</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                </div>
+                <div class="department">
+                    <div class="detitle">
+                        <span>社会热点 </span>
+                        <a class="more" href="/channels/9.html">更多 +</a>
+                    </div>
+                    <div class="container news">
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/9/31.html">买不起房的都跑去租房了，长租公寓会是一门好生意？</a>
+                                    <p>[06-30]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/9/34.html">职场上有没有“深刻”的人际关系？</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/9/33.html">恭喜成龙受颁“奥斯卡终身成就奖”&#65281;Duang&#65281;</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/9/32.html">余香 | 刘瑜：我的读书历程</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/9/35.html">为什么说应该“投奔”而非“逃离”北上广</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                            <ul>
+                                <li>
+                                    <a href="/contents/9/36.html">我经历的三次营销狂欢</a>
+                                    <p>[06-15]</p>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 重要内容结束 -->
+    <!-- 基层动态 轮播 -->
+    <div class="row" style="padding: 0 10px;margin-top: 20px;">
+        <div class="container-fluid" style="background-color: antiquewhite;padding-bottom: 0px;">
+            <div class="row container-fluid">
+                <h1 style="display: block;border-bottom: 2px solid rgba(201, 21, 21, 0.589);">基层动态</h1>
+            </div>
+
+            <div class="container-fluid">
+                
+                
+                
+                
+                
+                <ul id="swiper_2-pagination" class="nav nav-secondary nav-justified">
+                </ul>
+                <div id="swiper_2" class="swiper" style="height:inherit !important">
+                    <div class="swiper-wrapper">
+                        <!-- 第一个单位 -->
+                        <!-- 第一个单位结束 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="col-xs-6">
+                <div class="container-fluid">
+                    <div class="department ratio">
+                        <div class="detitle">
+                            <span>机关动态</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="container-fluid">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>稿件统计</span>
+                        </div>
+                        <div class="chart-canvas ratio"><canvas id="myBarChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 基层动态 轮播 结束  -->
+    <!-- 各部门 -->
+    <div class="row" style="padding: 0 10px;">
+        <div class="container-fluid" style="background-color: antiquewhite;margin-top: 2rem;">
+            <div class="row" style="margin-top: 2rem; margin-bottom: 2rem; ">
+                <div class="col-xs-8">
+                    <div class="container">
+                        <h1 style="display: block;border-bottom: 2px solid rgba(201, 21, 21, 0.589);">
+                            单位
+                        </h1>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="container">
+                                <div class="ratio-img">
+                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="ratio-img">
+                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="ratio-img">
+                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="container">
+                            <div class="department">
+                                <div class="detitle">
+                                    <span>部门</span>
+                                    <a class="more" href="#">更多 +</a>
+                                </div>
+                                <div class="container news">
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="container">
+                        <h1 style="display: block;border-bottom: 2px solid rgba(201, 21, 21, 0.589);">
+                            单位要闻
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="ratio-img">
+                                <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="ratio-img">
+                                <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container news" style="margin-top: 12px;">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 各部门结束 -->
+    <!-- 各栏目 -->
+    <div class="row" style="padding: 0 10px;">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 2rem; margin-bottom: 0px; ">
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门一</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门二</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门三</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem; margin-bottom: 0px; ">
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门一</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门二</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门三</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem; margin-bottom: 0px; ">
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门一</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门二</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 各栏目结束 -->
+    <!-- 内容结束 -->
+
+    <!-- 内容容器结束 -->
+            </div>
+<!-- 内容结束 -->
+<div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
+    <footer>
+        <HR align=center width=100% color=#987cb9 SIZE=2>
+        <ul class="nav nav-pills nav-justified" style="padding: 0 10%;">
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        </ul>
+    </footer>
+</div>
+        </div>
+<div class="col-xs-2">
+</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function back_history() {
+        history.back();
+    }
+</script>
+
+    <script>
+
+        var tabs = [
+  {
+    "channelName": "资讯动态",
+    "siteId": 2,
+    "contentModelPluginId": null,
+    "tableName": null,
+    "parentId": 2,
+    "parentsPath": [
+      2
+    ],
+    "parentsCount": 1,
+    "childrenCount": 2,
+    "indexName": "资讯动态",
+    "groupNames": [
+      "nav"
+    ],
+    "taxis": 3,
+    "addDate": "2021-12-14 10:09:38",
+    "imageUrl": "",
+    "content": "",
+    "filePath": "",
+    "channelFilePathRule": "",
+    "contentFilePathRule": "",
+    "linkUrl": "",
+    "linkType": "LinkToFirstChannel",
+    "channelTemplateId": 5,
+    "contentTemplateId": 6,
+    "keywords": "",
+    "description": "",
+    "children": null,
+    "isCreateChannelIfContentChanged": true,
+    "createChannelIdsIfContentChanged": null,
+    "listColumns": null,
+    "isPreviewContentsExists": false,
+    "defaultTaxisType": "OrderByTaxisDesc",
+    "isAllContents": false,
+    "id": 4,
+    "guid": "7b580d76-9081-405c-9cb7-2a6de31374cd",
+    "createdDate": "2021-12-14 10:09:38",
+    "lastModifiedDate": "2021-12-14 10:09:38"
+  },
+  {
+    "channelName": "社会新闻",
+    "siteId": 2,
+    "contentModelPluginId": null,
+    "tableName": null,
+    "parentId": 2,
+    "parentsPath": [
+      2
+    ],
+    "parentsCount": 1,
+    "childrenCount": 2,
+    "indexName": "社会新闻",
+    "groupNames": [
+      "nav"
+    ],
+    "taxis": 4,
+    "addDate": "2021-12-14 10:09:39",
+    "imageUrl": "",
+    "content": "",
+    "filePath": "",
+    "channelFilePathRule": "",
+    "contentFilePathRule": "",
+    "linkUrl": "",
+    "linkType": "LinkToFirstChannel",
+    "channelTemplateId": 5,
+    "contentTemplateId": 6,
+    "keywords": "",
+    "description": "",
+    "children": null,
+    "isCreateChannelIfContentChanged": true,
+    "createChannelIdsIfContentChanged": null,
+    "listColumns": null,
+    "isPreviewContentsExists": false,
+    "defaultTaxisType": "OrderByTaxisDesc",
+    "isAllContents": false,
+    "id": 7,
+    "guid": "3543273c-4712-48c9-b04e-5e9dc14fe583",
+    "createdDate": "2021-12-14 10:09:39",
+    "lastModifiedDate": "2021-12-14 10:09:39"
+  },
+  {
+    "channelName": "全球资讯",
+    "siteId": 2,
+    "contentModelPluginId": null,
+    "tableName": null,
+    "parentId": 2,
+    "parentsPath": [
+      2
+    ],
+    "parentsCount": 1,
+    "childrenCount": 2,
+    "indexName": "全球资讯",
+    "groupNames": [
+      "nav"
+    ],
+    "taxis": 5,
+    "addDate": "2021-12-14 10:09:39",
+    "imageUrl": "",
+    "content": "",
+    "filePath": "",
+    "channelFilePathRule": "",
+    "contentFilePathRule": "",
+    "linkUrl": "",
+    "linkType": "LinkToFirstChannel",
+    "channelTemplateId": 5,
+    "contentTemplateId": 6,
+    "keywords": "",
+    "description": "",
+    "children": null,
+    "isCreateChannelIfContentChanged": true,
+    "createChannelIdsIfContentChanged": null,
+    "listColumns": null,
+    "isPreviewContentsExists": false,
+    "defaultTaxisType": "OrderByTaxisDesc",
+    "isAllContents": false,
+    "id": 10,
+    "guid": "499b727b-bc85-4431-8e61-451e3d69de5d",
+    "createdDate": "2021-12-14 10:09:39",
+    "lastModifiedDate": "2021-12-14 10:09:39"
+  },
+  {
+    "channelName": "专题活动",
+    "siteId": 2,
+    "contentModelPluginId": null,
+    "tableName": null,
+    "parentId": 2,
+    "parentsPath": [
+      2
+    ],
+    "parentsCount": 1,
+    "childrenCount": 2,
+    "indexName": "专题活动",
+    "groupNames": [
+      "nav"
+    ],
+    "taxis": 6,
+    "addDate": "2021-12-14 10:09:39",
+    "imageUrl": "",
+    "content": "",
+    "filePath": "",
+    "channelFilePathRule": "",
+    "contentFilePathRule": "",
+    "linkUrl": "",
+    "linkType": "LinkToFirstChannel",
+    "channelTemplateId": 7,
+    "contentTemplateId": 6,
+    "keywords": "",
+    "description": "",
+    "children": null,
+    "isCreateChannelIfContentChanged": true,
+    "createChannelIdsIfContentChanged": null,
+    "listColumns": null,
+    "isPreviewContentsExists": false,
+    "defaultTaxisType": "OrderByTaxisDesc",
+    "isAllContents": false,
+    "id": 13,
+    "guid": "98a2d4da-8d38-4129-9877-55ac934274ec",
+    "createdDate": "2021-12-14 10:09:39",
+    "lastModifiedDate": "2021-12-14 10:09:39"
+  }
+];
+        window.onload = function () {
+            var swiper_1 = new Swiper('#swiper_1', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+
+                //自动播放
+                speed: 500,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                grabCursor: true,
+
+                //拖动忽略点击时间
+                preventClicksPropagation: false,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    bulletActiveClass: 'my-bullet-active',
+                },
+
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                on: {
+                    resize: function () {
+                        $("#swiper_1").each(function () {
+                            var ratio = 0.5625;  // 缩放比例
+                            var width = $(".swiper").width();    // 图片实际宽度
+                            var height = width * ratio;    // 计算等比例缩放后的高度
+                            $(this).css("height", height);  // 设定等比例缩放后的高度
+                        })
+                        this.update(); //窗口变化时，更新Swiper的一些属性，如宽高等
+                    },
+                },
+            });
+            var swiper_2 = new Swiper('#swiper_2', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+
+                //自动播放
+                speed: 800,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                effect: 'cube',
+                cubeEffect: {
+                    slideShadows: false,
+                    shadow: false,
+                },
+
+                //拖动忽略点击时间
+                preventClicksPropagation: false,
+
+                pagination: {
+                    el: '#swiper_2-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<li class="' + className + '"><a>' + tabs[index].channelName + '</a></li>';
+                    },
+                },
+
+                on: {
+                    resize: function () {
+                        $("#swiper_2").each(function () {
+                            var ratio = 0.35;  // 缩放比例
+                            var width = $("#swiper_2").width();    // 图片实际宽度
+                            var height = width * ratio;    // 计算等比例缩放后的高度
+                            $(this).css("height", height);  // 设定等比例缩放后的高度
+                        })
+                        this.update(); //窗口变化时，更新Swiper的一些属性，如宽高等
+                    },
+                },
+
+            });
+
+            //鼠标滑过pagination控制swiper切换
+            for (i = 0; i < swiper_1.pagination.bullets.length; i++) {
+                swiper_1.pagination.bullets[i].onmouseover = function () {
+                    this.click();
+                };
+            };
+
+            //鼠标滑过pagination控制swiper切换
+            for (i = 0; i < swiper_2.pagination.bullets.length; i++) {
+                swiper_2.pagination.bullets[i].onmouseover = function () {
+                    this.click();
+                    swiper_2.autoplay.stop();
+                };
+                swiper_2.pagination.bullets[i].onmouseout = function () {
+                    swiper_2.autoplay.start();
+                };
+            };
+        }
+        $(document).ready(function () {
+            for (var i = 0; i < tabs.length; i++) {
+                $("#swiper_2 div.swiper-wrapper").append(
+                    `<div class="swiper-slide">
+                        <div class="container-fluid">
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="Article"><img src="/images/400a6e57f796.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="#">
+                                                <img src="/images/6e920e010dfcbecfb625baa3690d75ba.jpeg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="#">
+                                                <img src="/images/6e920e010dfcbecfb625baa3690d75ba.jpeg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <div class="ratio-img">
+                                    <div class="department">
+                                        <div class="detitle">
+                                            <span>单位一</span>
+                                            <a class="more">更多 +</a>
+                                        </div>
+                                        <div class="container news">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`
+                );
+            }
+            $("#swiper_1").each(function () {
+                var ratio = 0.5625;  // 缩放比例
+                var width = $("#swiper_1").width();    // 图片实际宽度
+                var height = width * ratio;    // 计算等比例缩放后的高度
+                $(this).css("height", height);  // 设定等比例缩放后的高度
+            });
+
+            $("#swiper_2").each(function () {
+                var ratio = 0.35;  // 缩放比例
+                var width = $("#swiper_2").width();    // 图片实际宽度
+                var height = width * ratio;    // 计算等比例缩放后的高度
+                $(this).css("height", height);  // 设定等比例缩放后的高度
+            });
+        })
+    </script>
+</body>
 </html>

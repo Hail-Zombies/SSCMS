@@ -1,0 +1,34 @@
+<div class="wrap_right">
+        <h3 class="fenlei">{channel.top1.Title}</h3>
+        <div class="n_nav">
+          <ul>
+            <stl:channels>
+              <stl:if testType="UpChannelOrSelf">
+                <stl:yes>
+                  <li class="on"><stl:a>{Channel.Title}</stl:a></li>
+                </stl:yes>
+                <stl:no>
+                  <li><stl:a>{Channel.Title}</stl:a></li>
+                </stl:no>
+              </stl:if>
+            </stl:channels>
+          </ul>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function() {
+          $(".n_nav li").click(function(){
+          $(this).addClass("on").siblings().removeClass("on");
+          });
+          });
+        </script>
+        <div class="hot">
+          <h3>热门信息</h3>
+        </div>
+        <div class="n_nav_hot">
+          <ul>
+            <stl:contents scope="SelfAndChildren" totalNum="6" channelIndex="新闻动态" order="Hits">
+              <dd><i></i><stl:a><stl:content type="Title"></stl:content></stl:a></dd>
+            </stl:contents>
+          </ul>
+        </div>
+      </div>

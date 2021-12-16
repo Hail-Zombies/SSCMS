@@ -1,0 +1,28 @@
+<footer>
+	<div class="wrap footer">
+		<div class="foot clearfix">
+			<ul class="foot_nav fl">
+            <stl:channels groupChannel="foot" topLevel="0">
+				<dl class="foot_nav_hidd wow slideInUp">
+					<dt>{Channel.Title}</dt>
+					<stl:channels>
+						<dd><stl:a>{Channel.Title}</stl:a></dd>
+                    </stl:channels>
+				</dl>
+            </stl:channels>
+				<dl class="wow slideInUp" data-wow-delay="0.9s">
+					<dt>Contact Us</dt>
+					<dd class="lianxi_tel lianxi_icon">Tel:{stl:value type=Iphone}</dd>
+					<dd class="lianxi_mobile lianxi_icon">Mobile:{stl:value type=mobile} </dd>
+					<dd class="lianxi_email lianxi_icon">Email:{stl:value type=email}</dd>
+					<dd>
+					</dd>
+				</dl>
+			</ul>
+		</div>
+	</div>
+	<div class="bottom">
+        <div class="addthis_sharing_toolbox"></div>
+			<p>2018 &nbsp;&nbsp;&nbsp; Copyright  &nbsp;&nbsp;&nbsp;   SS CMS<span></span></p>
+		</div>
+</footer>

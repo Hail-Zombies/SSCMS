@@ -1,0 +1,229 @@
+﻿.nav-top.nav-simple a {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.nav-top.navbar-nav > .active > a,
+.nav-top.navbar-nav > .active > a:hover,
+.nav-top.navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #495569;
+}
+
+.nav-top .navbar-right {
+    position: absolute;
+    right: 25px;
+    left: auto;
+}
+
+/* ul.nav.nav-primary.nav-justified>li>a.dropdown-toggle:hover {
+    background-color: #18bda1;
+    display: block;
+    opacity: 1;
+} */
+
+/* .toolbar a {
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #75a56d;
+    display: block;
+    width: 8rem;
+    background-color: #f5faf2;
+    border: 1px solid #75a56d"
+}
+
+.toolbar td {
+    padding: 0.25rem 0rem;
+    width: 100%;
+}
+
+table.toolbar {
+    position: fixed;
+    top: 40%;
+    z-index: 11;
+} */
+
+/* 工具栏 */
+
+.toolbar {
+    position: fixed;
+    top: 40%;
+}
+
+@media (max-height: 768px) {
+    .toolbar {
+        display: none;
+    }
+}
+
+.toolbar-icon {
+    position: fixed;
+    bottom: 10%;
+    z-index: 11;
+}
+
+    .toolbar-icon > ul {
+        padding-left: 0;
+    }
+
+.toolbar .btn {
+    margin-top: 10px !important;
+}
+
+.nav-item {
+    white-space: nowrap
+}
+
+/* 轮播 */
+
+.tabs-carousel .item {
+    width: 100%;
+}
+
+div.ratio {
+    display: block !important;
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 56.25% !important;
+    overflow: hidden !important;
+}
+
+div.ratio-img {
+    padding-top: 20px;
+    display: block !important;
+    width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 56.25% !important;
+    overflow: hidden !important;
+}
+
+div.ratio img {
+    padding: 0;
+}
+
+.carousel-news .item {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+    .carousel-news .item a {
+        font-size: 16px;
+        text-decoration: underline;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: 11;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+        color: #fff;
+        text-overflow: ellipsis;
+        /*值为clip表示剪切，ellipsis时为显示省略号 */
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .carousel-news .item img {
+        width: 100%;
+        height: auto;
+    }
+
+.carousel-news .carousel-caption {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    height: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: #000;
+    opacity: 0.5;
+}
+
+/* .department {
+} */
+
+/* 主页栏目 */
+
+.detitle {
+    font-size: 20px;
+    color: #000000;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #eeeeee;
+    font-weight: 400;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+    .detitle span {
+        border-bottom: 4px solid #bd1818;
+        padding-bottom: 12px;
+    }
+
+    .detitle .more {
+        font-size: 16px;
+        color: #999999;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+
+.news ul {
+    position: relative;
+    margin: 0;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.news li a {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    /*值为clip表示剪切，ellipsis时为显示省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* .news li a:visited{
+    color: darkorchid;
+} */
+
+.news li > * {
+    font-size: 18px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.news li > p {
+    position: absolute;
+    right: 0px;
+}
+
+.news-3 li a {
+    max-width: 80%;
+}
+
+.weather * {
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.table th,
+.table td {
+    border-bottom: 0px solid #ddd;
+}
+
+.breadcrumb {
+    font-size: 2rem;
+    margin-bottom: 0;
+}

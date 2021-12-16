@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>{Channel.Title} | {Stl.SiteName}</title>
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/pages.css" />
+    <script src="{Stl.SiteUrl}/js/jquery.min.js"></script>
+    <script src="{Stl.SiteUrl}/js/wow.min.js"></script>
+    <script>
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+      new WOW().init();
+      };
+    </script>
+  </head>
+  <body>
+    <stl:include file="/include/header.html"></stl:include>
+    <!--手机导航开始 -->
+    <section>
+      <div class="menu-fl">
+        <ul class="menu_item">
+          
+          <li><a href="/en/ContactUs/">Contact Us</a></li>
+          
+          <li><a href="/en/RFQ_Check_List/">RFQ Check List</a></li>
+          
+        </ul>
+        <span class="report_close"><<</span>
+          <script>
+            $(".report_close").click(function(){
+            $(".menu-fl").hide(200);
+            });
+          </script>
+          <div class="clear"></div>
+          </div>
+          </section>
+          <!--头部导航结束 -->
+          <!--banner开始 -->
+          <stl:include file="/include/banner.html"></stl:include>
+          <!--banner结束 -->
+          <!--内容开始 -->
+          <div class="wrap">
+            <div class="wrap_left">
+              <div class="ltop">
+                <h3>{Channel.Title}</h3>
+              </div>
+              <!-- 新闻详情 -->
+              <div class="news_content">
+                <div class="detail-content-body">
+                  <stl:content type="Content"></stl:content>
+                </div>
+                <stl:input inputName="联系我们">
+                  <form  enctype="multipart/form-data" method="post" name="form" id="form" >
+                    <div class="container">
+                      <div class="container-item">
+                        <label><span>*</span>您的姓名:</label>
+                        <input id="name" name="name" type="text" class="input_text" value="" class="is_text i" style="width:380px;" isValidate="true" displayName="您的姓名" isRequire="true" minNum="2" maxNum="0" validateType="None" regExp="" errorMessage="请输入姓名" />
+                        &nbsp;<span id="name_msg" style="color:red;display:none;">*</span><script>event_observe('name', 'blur', checkAttributeValue);</script>
+                      </div>
+                      <div class="container-item">
+                        <label><span>*</span>电子邮件:</label>
+                        <input id="email" name="email" type="text" class="input_text" value="" class="is_text i" style="width:380px;" isValidate="true" displayName="邮箱" isRequire="true" minNum="0" maxNum="0" validateType="Email" regExp="" errorMessage="请输入正确的邮箱" />
+                        &nbsp;<span id="email_msg" style="color:red;display:none;">*</span><script>event_observe('email', 'blur', checkAttributeValue);</script>
+                      </div>
+                      <div class="container-item">
+                        <label><span>*</span>电话:</label>
+                        <input id="iphone" name="iphone" type="text" class="input_text" value="" class="is_text i" style="width:380px;" isValidate="true" displayName="电话" isRequire="true" minNum="0" maxNum="0" validateType="Phone" regExp="" errorMessage="请输入正确的电话号码" />
+                        &nbsp;<span id="iphone_msg" style="color:red;display:none;">*</span><script>event_observe('iphone', 'blur', checkAttributeValue);</script>
+                      </div>
+                      <div class="container-item">
+                        <label>公司:</label>
+                        <input id="company" name="company" type="text" class="input_text" value="" class="is_text i" style="width:380px;" isValidate="true" displayName="公司" isRequire="true" minNum="4" maxNum="0" validateType="Chinese" regExp="" errorMessage="请输入公司名称" />
+                        &nbsp;<span id="company_msg" style="color:red;display:none;">*</span><script>event_observe('company', 'blur', checkAttributeValue);</script>
+                      </div>
+                      <div class="container-item">
+                        <label>标题:</label>
+                        <input id="title" name="title" type="text" class="input_text" value="" class="is_text" style="width:380px;" isValidate="true" displayName="标题" isRequire="true" minNum="4" maxNum="0" validateType="Chinese" regExp="" errorMessage="请输入标题" />
+                        &nbsp;<span id="title_msg" style="color:red;display:none;">*</span><script>event_observe('title', 'blur', checkAttributeValue);</script>
+                      </div>
+                      <div class="container-item">
+                        <label><span>*</span>内容:</label>
+                        <textarea id="neirong" name="neirong" class="textarea" class="is_textarea" style="width: 41.8%;" isValidate="true" displayName="内容" isRequire="true" minNum="5" maxNum="0" validateType="Chinese" regExp="" errorMessage="请输入中文">
+      </textarea>    
+                         &nbsp;<span id="neirong_msg" style="color:red;display:none;">*</span> <script>event_observe('neirong', 'blur', checkAttributeValue);</script>
+                      </div>
+                      <div class="container-item">
+                        <input id="submit" type="button" class="is_btn btn" value=" 发信息 " />
+                      </div>
+                    </div>
+                  </form>
+                </stl:input>
+              </div>
+              <!-- 新闻详情 END -->
+            </div>
+            <!-- 新闻列表右侧 -->
+            <stl:include file="/include/right.html"></stl:include>
+            <!-- 新闻列表右侧END -->
+          </div>
+          <!--内容结束 -->
+          <!--底部开始 -->
+          <stl:include file="/include/footer.html"></stl:include>
+          <!--底部结束 -->
+          <!--置顶开始-->
+          <div class="fix-nav" id="fix-nav" style="display: block;">
+            <div class="fix-nav-wrap"> <img class="i-totop" src="{Stl.SiteUrl}/images/to_top.png" />
+            </div>
+          </div>
+          <!--置顶结束 -->
+         
+          </body>
+          </html>
+          

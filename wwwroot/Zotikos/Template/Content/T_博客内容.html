@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="renderer" content="webkit" />
+<title>{Channel.Title} | {Stl.SiteName}</title>
+<link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/base.css" />
+<link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/animate.css" />
+<link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/slide.css" />
+<link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/index.css" />
+<link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/pages.css" />
+<script src="{Stl.SiteUrl}/js/jquery.min.js"></script>
+<script src="{Stl.SiteUrl}/js/wow.min.js"></script>
+<script>
+if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+  new WOW().init();
+};
+</script>
+</head>
+<body>
+<stl:include file="/include/header.html"></stl:include>
+<!--手机导航开始 -->
+<section>
+  <div class="menu-fl">
+    <ul class="menu_item">
+      
+    </ul>
+    <span class="report_close"><<</span>
+    <script>
+        $(".report_close").click(function(){
+        $(".menu-fl").hide(200);
+        });
+        </script>
+    <div class="clear"></div>
+  </div>
+</section>
+<!--头部导航结束 -->
+<!--banner开始 -->
+<stl:include file="/include/banner.html"></stl:include>
+<!--banner结束 -->
+<!--内容开始 -->
+<div class="wrap">
+  <div class="wrap_left">
+    <div class="ltop">
+      <h3>{Channel.Title}</h3>
+    </div>
+    <!-- 新闻详情 -->
+    <div class="news_content">
+      <h1><stl:content type="Title"></stl:content></h1>
+      <div class="attr tc"> <span>作者:<stl:content type="Author"></stl:content></span><span>Time:<stl:content type="AddDate"></stl:content></span></div>
+      <div class="detail-content-body">
+        <stl:content type="Content"></stl:content>
+      </div>
+      <div class="keywords"><span>热门标签: </span> {Content.Tags}</div>
+      <div class="news_sx">
+        <p><span>上一篇: </span><stl:navigation type="PreviousContent" emptyText="无"></stl:navigation> </p>
+        <p><span>下一篇: </span><stl:navigation type="NextContent" emptyText="无"></stl:navigation> </p>
+      </div>
+    </div>
+    <!-- 新闻详情 END -->
+    <div class="link-news clearfix">
+      <div class="link-news-title">在线留言</div>
+      <ul class="blog_message">
+              <stl:input inputName="在线留言">
+        <form   method="post" name="form" id="form">
+          <div class="blog_message_item">
+            <label>姓名 <em>*</em></label>
+            <input id="name" name="name" type="text" class="input_text" value="" class="is_text" isValidate="true" displayName="姓名" isRequire="true" minNum="2" maxNum="0" validateType="Chinese" regExp="" errorMessage="请输入姓名" />
+      &nbsp;<span id="name_msg" style="color:red;display:none;">*</span><script>event_observe('name', 'blur', checkAttributeValue);</script>
+          </div>
+          <div class="blog_message_item">
+            <label>邮箱 <em>*</em></label>
+            <input id="email" name="email" type="text" class="input_text" value="" class="is_text" isValidate="true" displayName="邮箱" isRequire="true" minNum="0" maxNum="0" validateType="Email" regExp="" errorMessage="请输入正确的邮箱" />
+      &nbsp;<span id="email_msg" style="color:red;display:none;">*</span><script>event_observe('email', 'blur', checkAttributeValue);</script>
+          </div>
+          <div class="blog_message_item1 clearfix" style="width:47%;">
+            <label>评论<em>*</em></label>
+            <textarea id="message" name="message" rows="5" style="width: 98%;" class="textarea" class="is_textarea" isValidate="true" displayName="评论" isRequire="true" minNum="2" maxNum="0" validateType="Chinese" regExp="" errorMessage="请输入详细内容">
+      </textarea>
+      &nbsp;<span id="message_msg" style="color:red;display:none;">*</span> <script>event_observe('message', 'blur', checkAttributeValue);</script>
+          </div>
+                    <input id="submit" type="button" class="is_btn blog_message_button" value=" 发表评论 " />
+        </form>
+                </stl:input>
+      </ul>
+    </div>
+  </div>
+  <!-- 列表右侧 -->
+  <stl:include file="/include/right.html"></stl:include>
+  <!-- 列表右侧END -->
+</div>
+<!--内容结束 -->
+<!--底部开始 -->
+<stl:include file="/include/footer.html"></stl:include>
+<!--底部结束 -->
+<!--置顶开始-->
+<div class="fix-nav" id="fix-nav" style="display: block;">
+  <div class="fix-nav-wrap"> <img class="i-totop" src="{Stl.SiteUrl}/images/to_top.png" />
+  </div>
+</div>
+<!--置顶结束 -->
+->
+
+</body>
+</html>

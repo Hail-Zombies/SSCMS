@@ -1,0 +1,83 @@
+  <header>
+      <div class="wrap">
+        <div class="top-box clearfix">
+          <div class="left-box"> <span class="item">{stl:value type=welcome}</span> </div>
+          <div class="right-box"><span class="phone">{stl:value type=mobile}</span><span class="email"><a href="mailto:admin@siteserver.cn" target="_blank">admin@siteserver.cn</a></span></div>
+        </div>
+        <h1 class="logo wow fadeIn">
+          <a href="{Stl.SiteUrl}/index.html">
+            <img src="{stl.imageUrl}" />
+          </a>
+        </h1>
+        <div class="fr">
+          <div class="search wow flipInX">
+            <form action="{Stl.SiteUrl}/utils/search.html" method="get">
+              <input class="key" name="word"  type="text" />
+              <input class="go" type="submit" value="search" name="submit"/>
+            </form>
+          </div>
+        </div>
+        <div class="meun">
+          <div class="meun-nav"><span></span><span></span><span></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <script type="text/javascript" src="{Stl.SiteUrl}/js/common.js" ></script>
+    </header>
+    <!--头部结束 -->
+    <!--导航开始 -->
+    <nav>
+      <div class="wrap clearfix">
+        <ul class="nav">
+          <stl:if testType="ChannelIndex" testOperate="Equals" testValue="首页">
+            <stl:yes>
+              <li class="sub current"><a href='{Stl.SiteUrl}/index.html'>首页</a></li>
+            </stl:yes>
+            <stl:no>
+              <li class="sub"><a href='{Stl.SiteUrl}/index.html'>首页</a></li>
+            </stl:no>
+          </stl:if>
+          <stl:channels topLevel="0" groupChannel="nav">
+            <stl:if testType="UpChannelOrSelf">
+              <stl:yes>
+                <li class='sub current'><stl:a>{Channel.Title}</stl:a>
+                  <div class="subNav">
+                    <stl:channels>
+                      <p><stl:a>{Channel.Title}</stl:a></p>
+                    </stl:channels>
+                  </div>
+                </li>
+              </stl:yes>
+              <stl:no>
+                <li class='sub'><stl:a>{Channel.Title}</stl:a>
+                  <div class="subNav">
+                    <stl:channels>
+                      <p><stl:a>{Channel.Title}</stl:a></p>
+                    </stl:channels>
+                  </div>
+                </li>
+              </stl:no>
+            </stl:if>
+          </stl:channels>
+        </ul>
+      </div>
+    </nav>
+    <!--导航结束 -->
+    <!--平板导航开始 -->
+    <section>
+      <div class="meunBox">
+        <div class="meunCont">
+          <stl:channels topLevel="0" groupChannel="nav">
+            <dl>
+              <dt><stl:a>{Channel.Title}</stl:a></dt>
+              <dd>
+                <stl:channels>
+                  <stl:a>{Channel.Title}</stl:a>
+                </stl:channels>
+              </dd>
+            </dl>
+          </stl:channels>
+        </div>
+      </div>
+    </section>
+    <!--平板导航结束 -->

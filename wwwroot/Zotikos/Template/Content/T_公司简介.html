@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>{Channel.Title} | {Stl.SiteName}</title>
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="{Stl.SiteUrl}/css/pages.css" />
+    <script src="{Stl.SiteUrl}/js/jquery.min.js"></script>
+    <script src="{Stl.SiteUrl}/js/wow.min.js"></script>
+    <script>
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+      new WOW().init();
+      };
+    </script>
+  </head>
+  <body>
+    <stl:include file="/include/header.html"></stl:include>
+    <!--banner开始 -->
+    <stl:include file="/include/banner.html"></stl:include>
+    <!--banner结束 -->
+    <!--内容开始 -->
+    <div class="wrap">
+      <div class="wrap_left">
+        <div class="ltop">
+          <h3>{Channel.Title}</h3>
+        </div>
+        <!-- 新闻详情 -->
+        <div class="news_content">
+          <div class="detail-content-body">
+            <stl:content type="Content"></stl:content>
+          </div>
+          <div class="keywords"><span>热门标签: </span> {Content.Tags}</div>
+        </div>
+        <!-- 新闻详情 END -->
+      </div>
+      <!-- 新闻列表右侧 -->
+      <stl:include file="/include/right.html"></stl:include>
+      <!-- 新闻列表右侧END -->
+    </div>
+    <!--内容结束 -->
+    <!--底部开始 -->
+    <stl:include file="/include/footer.html"></stl:include>
+    <!--底部结束 -->
+    <!--置顶开始-->
+    <div class="fix-nav" id="fix-nav" style="display: block;">
+      <div class="fix-nav-wrap"> <img class="i-totop" src="{Stl.SiteUrl}/images/to_top.png" />
+      </div>
+    </div>
+    <!--置顶结束 -->
+    
+  </body>
+</html>
+

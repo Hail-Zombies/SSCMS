@@ -1,0 +1,577 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <stl:include file="/include/openzui.html"></stl:include>
+    <stl:include file="/include/swiper.html"></stl:include>
+</head>
+<body>
+
+    <stl:include file="/include/head.html"></stl:include>
+
+    <style type="text/css">
+        tr {
+            background: rgb(255 255 255)
+        }
+
+        #swiper_1.swiper {
+            width: 100%;
+        }
+
+        #swiper_1 .my-bullet-active {
+            background: #ffffff;
+            opacity: 1;
+        }
+
+        #swiper_1 .swiper-slide .swiper-caption {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            height: 25px;
+            padding-top: 0;
+            padding-bottom: 0;
+            color: #fff;
+            text-align: left;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            background-color: #000;
+            opacity: 0.5;
+        }
+
+        #swiper_1 .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        #swiper_1 .swiper-slide-a {
+            font-size: 16px;
+            text-decoration: underline;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: 11;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: #fff;
+            text-overflow: ellipsis;
+            /*值为clip表示剪切，ellipsis时为显示省略号 */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        #swiper_2-pagination a {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        #swiper_2-pagination .swiper-pagination-bullet {
+            border-radius: 0%;
+            height: inherit;
+            background: unset;
+            opacity: 1;
+        }
+
+        #swiper_2-pagination .swiper-pagination-bullet-active {
+            opacity: 1;
+            background-color: #b3d4fc;
+        }
+    </style>
+
+    <!-- 内容 -->
+    <div style="margin-top: 2px;"></div>
+    <!--天气-->
+    <div class="row weather">
+        <div class="col-xs-1" style="padding-right: 0; text-align: center;">
+            <a href="#" style="white-space: nowrap;">天气：</a>
+        </div>
+        <div class="col-xs-11">
+            <marquee onMouseOut="this.start()" onMouseOver="this.stop()">
+                北京 今天：小雨 17°~24°C 无持续风向&lt;3级
+            </marquee>
+        </div>
+    </div>
+    <!--天气结束-->
+    <!-- 重要内容 -->
+    <div class="row">
+        <div class="col-xs-8">
+            <div id="swiper_1" class="swiper">
+                <div class="swiper-wrapper">
+                    <stl:contents channelIndex="科技动态" isImage="true" totalNum="3">
+                        <div class="swiper-slide">
+                            <stl:a title="{Content.Title}" target="_blank">
+                                <img src="{Content.ImageUrl}" alt="{Content.Title}" />
+                            </stl:a>
+                            <div class="swiper-caption"></div>
+                            <stl:a class="swiper-slide-a"><stl:content type="Title"></stl:content></stl:a>
+                        </div>
+                    </stl:contents>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination" style="bottom:27px"></div><!--分页器。如果放置在swiper外面，需要自定义样式。-->
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div> <!-- 白色 -->
+            </div>
+        </div>
+
+        <div class="col-xs-4">
+            <div class="container">
+                <div class="department" style="margin-bottom: 1rem;">
+                    <div class="detitle">
+                        <span>企业热点</span>
+                        <stl:a channelIndex="企业热点" class="more">更多 +</stl:a>
+                    </div>
+                    <div class="container news">
+                        <stl:contents channelIndex="企业热点" totalNum="6" order="AddDate">
+                            <ul>
+                                <li>
+                                    <stl:a><stl:content type="Title"></stl:content></stl:a>
+                                    <p><stl:content type="AddDate" formatString="[MM-dd]"></stl:content></p>
+                                </li>
+                            </ul>
+                        </stl:contents>
+                    </div>
+                </div>
+                <div class="department">
+                    <div class="detitle">
+                        <span>社会热点 </span>
+                        <stl:a channelIndex="社会热点" class="more">更多 +</stl:a>
+                    </div>
+                    <div class="container news">
+                        <stl:contents channelIndex="社会热点" totalNum="6" order="AddDate">
+                            <ul>
+                                <li>
+                                    <stl:a><stl:content type="Title"></stl:content></stl:a>
+                                    <p><stl:content type="AddDate" formatString="[MM-dd]"></stl:content></p>
+                                </li>
+                            </ul>
+                        </stl:contents>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 重要内容结束 -->
+    <!-- 基层动态 轮播 -->
+    <div class="row" style="padding: 0 10px;margin-top: 20px;">
+        <div class="container-fluid" style="background-color: antiquewhite;padding-bottom: 0px;">
+            <div class="row container-fluid">
+                <h1 style="display: block;border-bottom: 2px solid rgba(201, 21, 21, 0.589);">基层动态</h1>
+            </div>
+
+            <div class="container-fluid">
+                <stl:channels id="tabs" topLevel="0" groupChannel="nav">
+                </stl:channels>
+                <ul id="swiper_2-pagination" class="nav nav-secondary nav-justified">
+                </ul>
+                <div id="swiper_2" class="swiper" style="height:inherit !important">
+                    <div class="swiper-wrapper">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="col-xs-6">
+                <div class="container-fluid">
+                    <div class="department ratio">
+                        <div class="detitle">
+                            <span>机关动态</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="container-fluid">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>稿件统计</span>
+                        </div>
+                        <div class="chart-canvas ratio"><canvas id="myBarChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 基层动态 轮播 结束  -->
+    <!-- 各部门 -->
+    <div class="row" style="padding: 0 10px;">
+        <div class="container-fluid" style="background-color: antiquewhite;margin-top: 2rem;">
+            <div class="row" style="margin-top: 2rem; margin-bottom: 2rem; ">
+                <div class="col-xs-8">
+                    <div class="container">
+                        <h1 style="display: block;border-bottom: 2px solid rgba(201, 21, 21, 0.589);">
+                            单位
+                        </h1>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="container">
+                                <div class="ratio-img">
+                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="ratio-img">
+                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="ratio-img">
+                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="container">
+                            <div class="department">
+                                <div class="detitle">
+                                    <span>部门</span>
+                                    <a class="more" href="#">更多 +</a>
+                                </div>
+                                <div class="container news">
+                                    <ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="container">
+                        <h1 style="display: block;border-bottom: 2px solid rgba(201, 21, 21, 0.589);">
+                            单位要闻
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="ratio-img">
+                                <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="ratio-img">
+                                <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container news" style="margin-top: 12px;">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 各部门结束 -->
+    <!-- 各栏目 -->
+    <div class="row" style="padding: 0 10px;">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 2rem; margin-bottom: 0px; ">
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门一</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门二</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门三</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem; margin-bottom: 0px; ">
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门一</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门二</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门三</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2rem; margin-bottom: 0px; ">
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门一</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="department">
+                        <div class="detitle">
+                            <span>部门二</span>
+                            <a class="more" href="#">更多 +</a>
+                        </div>
+                        <div class="container news">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 各栏目结束 -->
+    <!-- 内容结束 -->
+
+    <stl:include file="/include/foot.html"></stl:include>
+
+    <script>
+
+        var tabs = {stl:channels topLevel="0" groupChannel="nav"};
+        window.onload = function () {
+            var swiper_1 = new Swiper('#swiper_1', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+
+                //自动播放
+                speed: 500,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                grabCursor: true,
+
+                //拖动忽略点击时间
+                preventClicksPropagation: false,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    bulletActiveClass: 'my-bullet-active',
+                },
+
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                on: {
+                    resize: function () {
+                        $("#swiper_1").each(function () {
+                            var ratio = 0.5625;  // 缩放比例
+                            var width = $(".swiper").width();    // 图片实际宽度
+                            var height = width * ratio;    // 计算等比例缩放后的高度
+                            $(this).css("height", height);  // 设定等比例缩放后的高度
+                        })
+                        this.update(); //窗口变化时，更新Swiper的一些属性，如宽高等
+                    },
+                },
+            });
+            var swiper_2 = new Swiper('#swiper_2', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+
+                //自动播放
+                speed: 800,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+
+                effect: 'cube',
+                cubeEffect: {
+                    slideShadows: false,
+                    shadow: false,
+                },
+
+                //拖动忽略点击时间
+                preventClicksPropagation: false,
+
+                pagination: {
+                    el: '#swiper_2-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<li class="' + className + '"><a>' + tabs[index].channelName + '</a></li>';
+                    },
+                },
+
+                on: {
+                    resize: function () {
+                        $("#swiper_2").each(function () {
+                            var ratio = 0.28;  // 缩放比例
+                            var width = $("#swiper_2").width();    // 图片实际宽度
+                            var height = width * ratio;    // 计算等比例缩放后的高度
+                            $(this).css("height", height);  // 设定等比例缩放后的高度
+                        })
+                        this.update(); //窗口变化时，更新Swiper的一些属性，如宽高等
+                    },
+                },
+
+            });
+
+            //鼠标滑过pagination控制swiper切换
+            for (i = 0; i < swiper_1.pagination.bullets.length; i++) {
+                swiper_1.pagination.bullets[i].onmouseover = function () {
+                    this.click();
+                };
+            };
+
+            //鼠标滑过pagination控制swiper切换
+            for (i = 0; i < swiper_2.pagination.bullets.length; i++) {
+                swiper_2.pagination.bullets[i].onmouseover = function () {
+                    this.click();
+                    swiper_2.autoplay.stop();
+                };
+                swiper_2.pagination.bullets[i].onmouseout = function () {
+                    swiper_2.autoplay.start();
+                };
+            };
+        }
+        $(document).ready(function () {
+            for (var i = 0; i < tabs.length; i++) {
+                $("#swiper_2 div.swiper-wrapper").append(
+                    `<div class="swiper-slide">
+                        <div class="container-fluid">
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="Article"><img src="/images/400a6e57f796.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="#">
+                                                <img src="/images/6e920e010dfcbecfb625baa3690d75ba.jpeg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="ratio-img">
+                                            <a href="#">
+                                                <img src="/images/6e920e010dfcbecfb625baa3690d75ba.jpeg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <div class="ratio-img">
+                                    <div class="department">
+                                        <div class="detitle">
+                                            <span>单位一</span>
+                                            <a class="more">更多 +</a>
+                                        </div>
+                                        <div class="container news">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`
+                );
+            }
+            $("#swiper_1").each(function () {
+                var ratio = 0.5625;  // 缩放比例
+                var width = $("#swiper_1").width();    // 图片实际宽度
+                var height = width * ratio;    // 计算等比例缩放后的高度
+                $(this).css("height", height);  // 设定等比例缩放后的高度
+            });
+
+            $("#swiper_2").each(function () {
+                var ratio = 0.28;  // 缩放比例
+                var width = $("#swiper_2").width();    // 图片实际宽度
+                var height = width * ratio;    // 计算等比例缩放后的高度
+                $(this).css("height", height);  // 设定等比例缩放后的高度
+            });
+        })
+    </script>
+</body>
+</html>
