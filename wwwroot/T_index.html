@@ -71,6 +71,10 @@
             white-space: nowrap;
         }
 
+        #swiper_2 swiper{
+            z-index:unset;
+        }
+
         #swiper_2-pagination a {
             font-size: 18px;
             font-weight: bolder;
@@ -172,14 +176,15 @@
             </div>
 
             <div class="container-fluid">
-                <stl:channels id="tabs" topLevel="0" groupChannel="nav">
-                </stl:channels>
                 <ul id="swiper_2-pagination" class="nav nav-secondary nav-justified">
                 </ul>
                 <div id="swiper_2" class="swiper" style="height:inherit !important">
                     <div class="swiper-wrapper">
+                        <stl:channels id="tabs" topLevel="0" groupChannel="nav">
+                            <div class="swiper-slide">
+                            </div>
+                        </stl:channels>
                     </div>
-                </div>
             </div>
         </div>
         <hr>
@@ -399,7 +404,8 @@
 
     <script>
 
-        var tabs = {stl:channels topLevel="0" groupChannel="nav"};
+        var tabs = {stl:channels topLevel = "0" groupChannel = "nav"};
+       
         window.onload = function () {
             var swiper_1 = new Swiper('#swiper_1', {
                 direction: 'horizontal', // 垂直切换选项
@@ -449,16 +455,21 @@
                 //自动播放
                 speed: 800,
                 autoplay: {
-                    delay: 5000,
+                    delay: 7200,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 },
 
-                effect: 'cube',
-                cubeEffect: {
+                effect: 'flip',
+                flipEffect: {
                     slideShadows: false,
-                    shadow: false,
+                    limitRotation: true,
                 },
+
+                observer: true,//修改swiper自己或子元素时，自动初始化swiper
+                observeParents: true,//修改swiper的父元素时，自动初始化swiper
+
+                preventClicks: false,
 
                 //拖动忽略点击时间
                 preventClicksPropagation: false,
@@ -474,7 +485,7 @@
                 on: {
                     resize: function () {
                         $("#swiper_2").each(function () {
-                            var ratio = 0.28;  // 缩放比例
+                            var ratio = 0.29;  // 缩放比例
                             var width = $("#swiper_2").width();    // 图片实际宽度
                             var height = width * ratio;    // 计算等比例缩放后的高度
                             $(this).css("height", height);  // 设定等比例缩放后的高度
@@ -504,9 +515,56 @@
             };
         }
         $(document).ready(function () {
-            for (var i = 0; i < tabs.length; i++) {
-                $("#swiper_2 div.swiper-wrapper").append(
-                    `<div class="swiper-slide">
+
+            Create_tabs();
+
+            Set_ratio(0.5625, $("#swiper_1"));
+            Set_ratio(0.29, $("#swiper_2"));
+        })
+
+        function Set_ratio(ratio,obj) {
+            obj.each(function () {
+                var width = obj.width();    // 图片实际宽度
+                var height = width * ratio;    // 计算等比例缩放后的高度
+                $(this).css("height", height);  // 设定等比例缩放后的高度
+            });
+        }
+
+        function Get_data() {
+            var childrens;
+            $.ajax({
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-SS-API-KEY": "26e09ba9-ce14-440d-83d2-c76e43d4fc37",
+                },
+                type: "get",
+                url: "/api/v1/channels/" + tab.siteId + "/" + tab.id,
+                success: function (data, status) {
+                    childrens = data;
+                    console.log("状态: " + status);
+                }
+            });
+        }
+
+        function Create_tabs() {
+            var i = 0;
+            $("#swiper_2 .swiper-slide").each(function () {
+                var current = $(this);
+                var tab = tabs[i];
+                i = i + 1;
+                $.ajax({
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-SS-API-KEY": "26e09ba9-ce14-440d-83d2-c76e43d4fc37",
+                    },
+                    async: false,
+                    type: "get",
+                    url: "/api/v1/channels/" + tab.siteId + "/" + tab.id,
+                    success: function (data, status) {
+                        if (data.children.length == 0) {
+                        }
+                        else {
+                            current.append(`
                         <div class="container-fluid">
                             <div class="col-xs-6">
                                 <div class="row">
@@ -544,8 +602,8 @@
                                 <div class="ratio-img">
                                     <div class="department">
                                         <div class="detitle">
-                                            <span>单位一</span>
-                                            <a class="more">更多 +</a>
+                                            <span>`+ data.children[0].channelName + `</span>
+                                            <a class="more" href="/channels/`+ data.children[0].id+`.html">更多 +<a>
                                         </div>
                                         <div class="container news">
                                             <ul>
@@ -554,24 +612,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>`
-                );
-            }
-            $("#swiper_1").each(function () {
-                var ratio = 0.5625;  // 缩放比例
-                var width = $("#swiper_1").width();    // 图片实际宽度
-                var height = width * ratio;    // 计算等比例缩放后的高度
-                $(this).css("height", height);  // 设定等比例缩放后的高度
+                        </div>`)
+                        }
+                    }
+                });
             });
-
-            $("#swiper_2").each(function () {
-                var ratio = 0.28;  // 缩放比例
-                var width = $("#swiper_2").width();    // 图片实际宽度
-                var height = width * ratio;    // 计算等比例缩放后的高度
-                $(this).css("height", height);  // 设定等比例缩放后的高度
-            });
-        })
+        }
     </script>
 </body>
 </html>
