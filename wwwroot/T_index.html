@@ -416,7 +416,7 @@
     <stl:include file="/include/foot.html"></stl:include>
 
     <script>
-        var tabs = {stl:channels topLevel = "0" groupChannel = "nav"};
+        var tabs = {stl:channels topLevel="0" groupChannel="nav"};
 
         window.onload = function () {
             var swiper_1 = new Swiper('#swiper_1', {
@@ -462,7 +462,7 @@
             });
             var swiper_2 = new Swiper('#swiper_2', {
                 direction: 'horizontal', // 垂直切换选项
-                loop: true, // 循环模式选项
+                loop: false, // 循环模式选项
 
                 //自动播放
                 speed: 800,
@@ -471,11 +471,11 @@
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 },
-                effect : 'cube',
-  cubeEffect: {
-    slideShadows: false,
-    shadow: false,
-  },
+                effect: 'cube',
+                cubeEffect: {
+                    slideShadows: false,
+                    shadow: false,
+                },
                 observer: true, //修改swiper自己或子元素时，自动初始化swiper
                 observeParents: true, //修改swiper的父元素时，自动初始化swiper
 
@@ -527,7 +527,7 @@
         }
         $(document).ready(function () {
 
-            Create_tabs();
+            Get_tabs()
 
             Set_ratio(0.5625, $("#swiper_1"));
             Set_ratio(0.29, $("#swiper_2"));
@@ -541,7 +541,7 @@
             });
         }
 
-        function Get_contents(siteId, channelId) {
+        function Get_contents_title(siteId, channelId) {
             $.ajax({
                 headers: {
                     "Content-Type": "application/json",
@@ -560,7 +560,7 @@
                 type: "post",
                 url: "/api/v1/contents",
                 success: function (data, status) {
-                    Create_Contens_title(data, $("#channel_" + channelId + "_contents ul"));
+                    Create_contents_title(data, $("#channel_" + channelId + "_contents ul"));
                     console.log("状态: " + status);
                 },
                 error: function (xhr) {
@@ -568,35 +568,86 @@
                 }
             });
         }
-        
-        function Create_Contens_title(data,obj) {
-            var str="";
+
+        function Create_contents_title(data, obj) {
+            var str = "";
             for (var i = 0; i < data.contents.length; i++) {
-                str += `<li><a href="#">` + data.contents[i].title + `</a><p style="color:black">` + parseDate(data.contents[i].lastModifiedDate)+`</p></li>`;
+                str += `<li><a href="#">` + data.contents[i].title + `</a><p style="color:black">` + parseDate(data
+                    .contents[i].lastModifiedDate) + `</p></li>`;
             }
             obj.append(str);
         }
 
-        function Create_tabs() {
+        function Get_contents_image(siteId, channelId){
+            $.ajax({
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-SS-API-KEY": "26e09ba9-ce14-440d-83d2-c76e43d4fc37",
+                },
+                data: JSON.stringify({
+                    "siteId": siteId,
+                    "channelId": channelId,
+                    "orders": [{
+                        "column": "lastModifiedDate",
+                        "desc": false,
+                    }],
+                    "wheres": [ {
+                        "column": "imageUrl",
+                        "operator": "!=",
+                        "value": ""
+                    }],
+                    "page": 1,
+                    "perPage": 4,
+                }),
+                type: "post",
+                url: "/api/v1/contents",
+                success: function (data, status) {
+                    Create_contents_image(data, $("#channel_" + channelId + "_contents_img"));
+                    console.log("状态: " + status);
+                },
+                error: function (xhr) {
+                    console.log("错误提示： " + xhr.status + " " + xhr.statusText);
+                }
+            });
+        }
+
+        function Create_contents_image(data, obj) {
+            var str = "";
+            for (var i = 0; i < data.contents.length; i++) {
+                str += `<li><a href="#">` + data.contents[i].title + `</a><p style="color:black">` + parseDate(data
+                    .contents[i].lastModifiedDate) + `</p></li>`;
+            }
+            obj.find(".ratio-img").each(function(){
+                $(this);
+            });
+        }
+
+        function Get_tabs() {
             var i = 0;
             $("#swiper_2 .swiper-slide").each(function () {
                 var current = $(this);
                 var tab = tabs[i];
-                i = i + 1;
-                $.ajax({
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-SS-API-KEY": "26e09ba9-ce14-440d-83d2-c76e43d4fc37",
-                    },
-                    async:false,
-                    type: "get",
-                    url: "/api/v1/channels/" + tab.siteId + "/" + tab.id,
-                    success: function (data, status) {
-                        if (data.children.length == 0) {} else {
-                            Get_contents(tab.siteId, data.children[0].id);
-                            current.append(`
+                i++;
+                Create_tabs(current, tab.siteId, tab.id, i);
+            });
+        }
+
+        function Create_tabs(obj, siteId, id, num) {
+            $.ajax({
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-SS-API-KEY": "26e09ba9-ce14-440d-83d2-c76e43d4fc37",
+                },
+                type: "get",
+                url: "/api/v1/channels/" + siteId + "/" + id,
+                error: function () {
+                    obj.append(`<div>` + num + `</div>`);
+                },
+                success: function (data, status) {
+                    if (data.children.length == 0) {} else {
+                        obj.append(`
                         <div class="container-fluid">
-                            <div class="col-xs-6">
+                            <div id="channel_` + data.children[0].id + `_contents_img" class="col-xs-6">
                                 <div class="row">
                                     <div class="col-xs-6">
                                         <div class="ratio-img">
@@ -635,37 +686,38 @@
                                             <span>` + data.children[0].channelName + `</span>
                                             <a class="more" href="/channels/` + data.children[0].id + `.html">更多 +<a>
                                         </div>
-                                        <div id="channel_`+ data.children[0].id +`_contents" class="container news">
+                                        <div id="channel_` + data.children[0].id + `_contents" class="container news">
                                             <ul>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>`)
-                        }
+                        </div>`);
+                        Get_contents_title(siteId, data.children[0].id);
+                        Get_contents_image(siteId, data.children[0].id);
                     }
-                });
+                }
             });
         }
 
         //转换时间格式
-function parseDateTime(update_time) {
-    var list = update_time.split("T");
-    var date = list[0].split("-");
-    var time = list[1].split(":");
-    var day = new Date(Date.parse(date[1] + "/" + date[2] + "/" + date[0]));
-    var today = new Array('星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六');
-    var week = today[day.getDay()];
-    return date[0] + "年" + date[1] + "月" + date[2] + "日（" + week + "）"
-        + time[0] + ":" + time[1];
-}
+        function parseDateTime(update_time) {
+            var list = update_time.split("T");
+            var date = list[0].split("-");
+            var time = list[1].split(":");
+            var day = new Date(Date.parse(date[1] + "/" + date[2] + "/" + date[0]));
+            var today = new Array('星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六');
+            var week = today[day.getDay()];
+            return date[0] + "年" + date[1] + "月" + date[2] + "日（" + week + "）" +
+                time[0] + ":" + time[1];
+        }
 
-function parseDate(update_time) {
-    var list = update_time.split(" ");
-    var date = list[0].split("-");
-    return `[` + date[1] + `-` + date[2] + `]`;
-}
+        function parseDate(update_time) {
+            var list = update_time.split(" ");
+            var date = list[0].split("-");
+            return `[` + date[1] + `-` + date[2] + `]`;
+        }
     </script>
 </body>
 
