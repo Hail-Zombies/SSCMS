@@ -244,19 +244,19 @@
                         <div class="row">
                             <div class="container">
                                 <div class="ratio-img">
-                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                    <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6">
                                 <div class="ratio-img">
-                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                    <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
                                 </div>
                             </div>
                             <div class="col-xs-6">
                                 <div class="ratio-img">
-                                    <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                    <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
                                 </div>
                             </div>
                         </div>
@@ -285,12 +285,12 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="ratio-img">
-                                <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
                             </div>
                         </div>
                         <div class="col-xs-6">
                             <div class="ratio-img">
-                                <a href="#"><img src="~/image/400a6e57f796.jpeg"></a>
+                                <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
                             </div>
                         </div>
                     </div>
@@ -471,11 +471,9 @@
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 },
-                effect: 'cube',
-                cubeEffect: {
-                    slideShadows: false,
-                    shadow: false,
-                },
+
+                effect : 'flip',
+
                 observer: true, //修改swiper自己或子元素时，自动初始化swiper
                 observeParents: true, //修改swiper的父元素时，自动初始化swiper
 
@@ -572,7 +570,7 @@
         function Create_contents_title(data, obj) {
             var str = "";
             for (var i = 0; i < data.contents.length; i++) {
-                str += `<li><a href="#">` + data.contents[i].title + `</a><p style="color:black">` + parseDate(data
+                str += `<li><a href="` + data.contents[i].navigationUrl+`">` + data.contents[i].title + `</a><p style="color:black">` + parseDate(data
                     .contents[i].lastModifiedDate) + `</p></li>`;
             }
             obj.append(str);
@@ -612,14 +610,10 @@
         }
 
         function Create_contents_image(data, obj) {
-            var str = "";
+            var div_imgs = obj.find(".ratio-img");
             for (var i = 0; i < data.contents.length; i++) {
-                str += `<li><a href="#">` + data.contents[i].title + `</a><p style="color:black">` + parseDate(data
-                    .contents[i].lastModifiedDate) + `</p></li>`;
+                $(div_imgs[i]).append(`<a href="` + data.contents[i].navigationUrl+`"><img src="` + data.contents[i].imageUrl + `"></a>`);
             }
-            obj.find(".ratio-img").each(function(){
-                $(this);
-            });
         }
 
         function Get_tabs() {
@@ -651,14 +645,10 @@
                                 <div class="row">
                                     <div class="col-xs-6">
                                         <div class="ratio-img">
-                                            <a href="Article"><img src="/images/400a6e57f796.jpeg"></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6">
                                         <div class="ratio-img">
-                                            <a href="#">
-                                                <img src="/images/6e920e010dfcbecfb625baa3690d75ba.jpeg">
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -666,14 +656,10 @@
                                 <div class="row">
                                     <div class="col-xs-6">
                                         <div class="ratio-img">
-                                            <a href="#"><img src="/images/400a6e57f796.jpeg"></a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6">
                                         <div class="ratio-img">
-                                            <a href="#">
-                                                <img src="/images/6e920e010dfcbecfb625baa3690d75ba.jpeg">
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
