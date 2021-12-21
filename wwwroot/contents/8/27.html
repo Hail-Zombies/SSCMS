@@ -1,361 +1,216 @@
-<!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>
-硬件与软件的辩证关系：硬件创建新世界，软件拿走利润
--
-企业热点
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-<link href="/css/iconfont.css" type="text/css" rel="stylesheet"/>
-<link href="/css/common.css" type="text/css" rel="stylesheet"/>
-<link href="/css/swiper.min.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script type="text/javascript" src="/js/swiper.min.js"></script>
-<script type="text/javascript" src="/js/js.js"></script>
-<link rel='stylesheet' id='style-css'  href='/css/style.css' type='text/css' media='all' />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    
+<!-- ZUI 标准版压缩后的 CSS 文件 -->
+<link rel="stylesheet" href="/zui/css/zui.min.css">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="/zui/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="/zui/js/zui.min.js"></script>
+    <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+<script src="/swiper/swiper-bundle.min.js"></script>
 </head>
-<body class="post-template-default single single-post postid-218 single-format-gallery">
-<div class="search-box " id="search-box"> <i class="icon icon-search-close js-show-search-box"></i>
-  <div class="search-content overlay-dialog-animate">
-    <div class="search-input">
-      <form id="search-input" role="search" method="get" action="/utils/search.html" onSubmit="return checkinput()">
-        <button type="submit"></button>
-        <input placeholder="请输入关键字，按回车键搜索" name="word" id="search-input">
-        <input type="hidden" name="type" value="Title" id="search-input"/>
-      </form>
+
+
+<body>
+  <div id="anchor_top"></div>
+<!-- 顶部导航栏 -->
+<nav class="navbar navbar-inverse" role="navigation"
+    style="margin-bottom: 0;background-color: black;border-radius: 0;border: 0;">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">标识</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav nav-top" style="font-size:large">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="search-history search-hot"> <span>热搜词</span>
-      <ul>
-      
-      </ul>
-    </div>
-  </div>
-</div> 
-<div id="top_nav" class="header yapiskan">
-  <div class="container">
+</nav>
+<!-- 顶部导航栏结束 -->
+
+<div class="container-fluid">
+    <!-- 母版头 -->
     <div class="row">
-      <div class="top-bar mnav">
-        <button class="navbar-toggle js-open-nav" type="button">
-        <div class="icon-bar"> </div>
-        <div class="icon-bar"> </div>
-        <div class="icon-bar"> </div>
-        </button>
-      </div>
-      <div class="logo mnav"><a href="/index.html">
-        <img src="/upload/images/2017/6/29145430455.png" />
-      </a> </div>
-      <div class="pull-right mnav"> <i class="icon icon-search" id="msearch"></i> </div>
-      <div class="nav-left" id="nav">
-        
-        <ul class="nav-menu clearfix">
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/5.html">资讯动态 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/5.html">科技动态</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/6.html">财经动态</a></li>
-            
-            </ul>
-          
-          </li>
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/8.html">社会新闻 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/8.html">企业热点</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/9.html">社会热点</a></li>
-            
-            </ul>
-          
-          </li>
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/11.html">全球资讯 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/11.html">环球搜讯</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/12.html">国际视野</a></li>
-            
-            </ul>
-          
-          </li>
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/14.html">专题活动 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/14.html">娱乐专题</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/15.html">科技专题</a></li>
-            
-            </ul>
-          
-          </li>
-        
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+            <div class="container-fluid" style="margin-top: 0px; margin-bottom: 0px; ">
+                <img src="/images/148bf7ddd88766bafe822cbc79e132ec.jpeg" alt=" 图片丢失"
+                    style=" width: 100%;height: auto;" />
+                <!-- <div style="margin-top: 2px; margin-bottom: 0px;height:40px;"> </div> -->
+
+                <ul class="nav nav-top nav-simple nav-justified" style="border: 0;background-color:azure">
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/5.html">资讯动态</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/5.html">科技动态</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/6.html">财经动态</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/8.html">社会新闻</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/8.html">企业热点</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/9.html">社会热点</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/11.html">全球资讯</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/11.html">环球搜讯</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/12.html">国际视野</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/14.html">专题活动</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/14.html">娱乐专题</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/15.html">科技专题</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-1">
+            <div class="container">
+    <div class="toolbar-icon">
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="#anchor_top">
+                    <i class="icon icon-chevron-sign-up icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
         </ul>
-        
-      </div>
-      <div class="nav-right">
-        <ul class="clearfix">
-          <li class="wx-li">
-            <div class="wx-pic">
-              <img src="/upload/images/2017/6/17173412614.jpg" />
-              <div class="wx-text"> <span>微信扫一扫</span> </div>
+    </div>
+</div>
+        </div>
+        <div class="col-xs-1">
+        </div>
+    </div>
+    <!-- 母版头结束 -->
+
+    <div class="row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+            <!-- 内容 -->
+            <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
+                <!-- 内容容器 -->
+
+  <article class="article">
+    <header>
+        <h1 style="text-align:center">硬件与软件的辩证关系：硬件创建新世界，软件拿走利润</h1>
+
+        <dl class="dl-inline">
+            <dt>作者：</dt>
+            <dd id="author">
+            </dd>
+            <dt>最后修订：</dt>
+            <dd id="update_time">
+            </dd>
+            <dd style="float:right" id="class">
+            </dd>
+            <dt style="float:right">栏目：</dt>
+        </dl>
+    </header>
+
+    <section class="content">
+      <div class="article-img-box" style="box-sizing: border-box; text-align: center; position: relative; color: rgb(51, 51, 51); font-family: Arial, 微软雅黑, &quot;Microsoft yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, &quot;Microsoft Yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/upload/images/2017/6/29183056487" alt="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></div><div class="article-content-wrap" style="box-sizing: border-box; line-height: 30px; margin-top: 25px; color: rgb(51, 51, 51); font-family: Arial, 微软雅黑, &quot;Microsoft yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, &quot;Microsoft Yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">在这篇文章里我们会持续思考一个非常辩证的问题：硬件和软件到底是怎么样一种关系？这种关系之所以重要在于软件公司做硬件或者硬件公司做软件所要跨越的鸿沟实际上无比巨大，背后如果没有充足的理由，那这种挑战必然会以失败告终。而科技的浪潮则正在让不同的公司都必须思考原本不属于自己的领域。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="text-big-title" style="box-sizing: border-box; font-weight: 700; font-size: 20px; color: rgb(164, 29, 29);">硬件创建新世界</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">计算机时代的开始最早可以追溯到1946年的ENIAC，而个人电脑的开始则要从1977年的Appple II开始算起。功能型手机事实上比Apple II还要早一点，1973年的时候摩托罗拉的马丁·库帕就在街头实验了两块砖头大的大哥大。智能手机的标志性事件可以认为是2007年iPhone的发布。&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">从老的大型机到个人电脑，再到智能手机，我们可以发现在行业初期显然的核心驱动力是以硬件为代表的新产品，在行业早期软件是处于协同的角色上的。典型的例子是微软在最开始的IBM PC上发言权并不大，更像一个供货商。而提到智能手机时代的标签时，我们更多的会谈到iPhone(触屏、无键盘灯)而非iOS。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这模式几乎一定会延续下去，没有VR/AR硬件产品，那就不可能有真的VR/AR世界，而当VR/AR自身还处在摸索之中时，那重要的就是把硬件产品做出来，而不是后面的系统和应用平台。所以这两者上的创业公司都是做硬件产品的比如Oculus。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">只有这种新型的计算平台渐趋稳定，才可能会有后面的OS独立，才会有后面应用的大展开，比如新的电商、新的游戏、新的视频内容。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">总结来看，我们可以讲新世界的创建通常是从硬件开始的，但有意思的事情是硬件先锋们通常并不能笑到最后。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">软件拿走利润</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们知道在个人电脑时代最赚钱的企业是微软，在智能机时代最赚钱的手机企业是Google，互联企业更是分享了由电脑、手机、网络基础设施带来的大部分收益。所以总结来看硬件创造的新世界里面的利润其实是被软件企业拿走了。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们并没有清晰的数字来说明究竟Google赚了多少钱并和一般手机厂商进行对比，但至少可以从微软与PC厂商的利润差异上产生一点直观感受：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="img-center-box" style="box-sizing: border-box; text-align: center; display: block;"><img src="/upload/images/2017/6/29183057255.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; text-align: center;"><span class="text-remarks" style="box-sizing: border-box; color: rgb(153, 153, 153); line-height: 30px;">微软每年净利润</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="img-center-box" style="box-sizing: border-box; text-align: center; display: block;"><img src="/upload/images/2017/6/29183057304.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; text-align: center;"><span class="text-remarks" style="box-sizing: border-box; color: rgb(153, 153, 153); line-height: 30px;">&nbsp;Dell每年利润</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">Source: statista</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们可以简单统计2003~2012 10年间两者的差异：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="img-center-box" style="box-sizing: border-box; text-align: center; display: block;"><img src="/upload/images/2017/6/29183057656.jpg" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">如果想更有针对性，那要做些剔除比如Xbox的收入等，但考虑这个时间段里两家公司的主营业务，即使不做这种细化，其每年净利润的直接对比已经足以说明很多问题了。微软的净利润是Dell的3倍以上，并且在十年间有逐步提高的趋势。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">IBM很可能是认识到了这点，所以非常痛快的把自己的大部分硬件业务都卖掉了。苹果很可能也认识到了这一点，所以在稍微尝试下软件授权业务（把操作系统授权给别家使用）后就立刻退缩了，专注的走软硬一体道路。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这样一来事情就变得非常有意思：硬件企业千辛万苦开辟新世界，但却不能拿到最大的回报，世界似乎很不公平。可为什么会这样呢？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">为什么会这样？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">核心原因在于硬件自身丧失定价权，而软件企业则逐渐成为用户没有选择的平台。简单来讲是软件上更容易产生垄断。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这在PC和Winodws，手机和Android上体现的特别明显。硬件始终是单品，并且越来越标准化。硬件企业每销售一台PC或手机除了可以赚到该有的那部分利润，并没有产生用户粘性。Windows则是每当硬件企业销售出一台PC，其生态就扩大一分，生态扩大的好处主要来自于两个方面：一是更多的应用程序开发商就会更愿意为Windows开发程序；一是用户的数据越多的沉淀到这个系统之中。前者导致大量长尾需求被满足，后者导致没法迁移Office这样应用的使用，最终结果是一种垄断的地位。垄断意味着企业有更大的控制权，而用户选择空间极小。Android与手机的情形显然与此类似。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们可以回放一下整个过程的关键节点：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><ol class=" list-paddingleft-2" style="box-sizing: border-box; margin-bottom: 10px; padding-left: 15px;"><li><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">划时代的新硬件产品出现，这时主导者是硬件厂商。</p></li></ol><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">2. &nbsp;硬件产品上形成统一的软件抽象，这种软件抽象过去主要是操作系统，未来不一定。这时主导者仍然是硬件厂商。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">3. 变为软件厂商。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">4. 硬件产品变得高度货品化，竞争激烈，利润逐步降低。硬件厂商丧失利润空间。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">至少在PC和手机上我们可以清晰的看到这模式几乎完全不走样的变成了现实。在这个模式里面，小的变更是第二点上原来是微软的license fee模式，最新则是Android的开源模式。后者显然对硬件厂商更有诱惑力，明知道是有毒的果子，却也不得不吃。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">未来这模式是可持续的么？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们仍然看到很多新的硬件在不断出现，其中一部分显然具有成为大众型产品的潜力，比如手表、汽车、Echo等。那么会否重演上述的模式？答案是肯定的。显然，在智能手表上，很多硬件厂商已经兴高采烈的开始拥抱Android Wear了。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这里的关键点在于，完全的打造一套自己的软件生态，对于硬件厂商而言通常比较吃力，而如果这种巨大投入不能换成产品的附加值，反倒是成为产品体验的减分项，那是得不偿失的。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这时候硬件厂商的选择是：要么赌一把大的，软件上尝试自己主导，但失败风险很高；要么就重复上述的模式。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">把这话题进一步延伸，我们会发现在智能汽车、智能机器人上都存在着同样的结构性机会。都需要回答谁做硬件，谁做软件这样的分工问题。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">在车上面过去并没出现一种统一的操作系统，但自动驾驶的出现很可能改变这种局面。我们要么有很多个苹果式的车企，要么有人以自动驾驶为切入点，让很多车企共享同样的操作系统。当前还是很难预测具体的走势，但小车企多的时候，理论上讲后者的可能性其实非常高。而能确定的是，一旦走上这种软硬分离的道路，那就会重演过往PC和手机走过的模式—硬件开创新世界，软件拿走利润。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这里面形式上最可能发生变化的估计仍然是第二步：2.&nbsp; 硬件产品上形成统一的软件抽象，这种软件抽象过去主要是操作系统，未来不一定。这时主导者仍然是硬件厂商。这种软件抽象并不一定是操作系统，其本质是要转移走硬件的控制权，所以也可以是浏览器、Siri等形式。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">小结</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">许多年前IT行业刚刚兴起，那时候即使大学生也会没事探讨下软件硬件的关系，当然大多时候会陷入那个更重要的争论。今天看来作为一个有机的系统其实你很难区分那个更重要，这是没有答案的，但可以区分的是那个更有控制权，形成事实上的垄断。这种垄断在硬件上要比软件上更难达成，所以就有了上面所说的一切。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p></div><p style="white-space: normal;"><strong>昨天、今天、明天，你我都在不断的改变 &nbsp;&nbsp;</strong></p><p style="white-space: normal;"><strong>加入SiteServer，我们一起去探索未来！&nbsp;<img src="/upload/images/2017/7/21384921.png" title="image.png" alt="image.png"/></strong></p><p><br/></p>
+    </section>
+  </article>
+  <!-- 内容容器结束 -->
             </div>
-            <i class="icon wx-icon"></i><span>微信</span><em class="guide-prompt" style="display: none;"></em> </li>
-          <li class="search-li"><i class="icon icon-search "></i><span>搜索</span></li>
-          <li class="login-li"><a href="/home/pages/login.html?returnUrl=/contents/8/27.html/" target="_blank" title="登录网站">登录</a></li>
+<!-- 内容结束 -->
+<div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
+    <footer>
+        <HR align=center width=100% color=#987cb9 SIZE=2>
+        <ul class="nav nav-pills nav-justified" style="padding: 0 10%;">
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
         </ul>
-      </div>
-    </div>
-  </div>
+    </footer>
 </div>
-<div id="content-article">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-lg-8 cont-left"> 
-        <!--文章内容开始left -->
-        <div class="article-left-btn-group">
-          <ul>
-            <li> <a href="http://t.qq.com/siteserver2011" class="long-weibo" target="_blank"> <i class="icon icon-article icon-article-wb js-weibo js-share-article" data-location="article" data-f="pc-weibo-article"></i> </a> </li>
-            <li class="weixin" data-f="pc-friends-article">
-              <div class="weixin-Qr-code" style="opacity: 1; margin-left: 70px; display: none;">
-                <img width="130" height="130" src="/upload/images/2017/6/17173412614.jpg" /> </div>
-              <a><i class="icon icon-article icon-article-pyq"></i></a> </li>
-            
-            <li> <a href="#comments"> <i class="icon icon-article icon-article-pl">评论</i></a> </li>
-          </ul>
         </div>
-        
-        <div id="detail-article"> 
-          
-          <div class="da-title"> <a>
-            <img src="/upload/images/2017/6/2614359131.png" />
-          </a>
-            <h2>硬件与软件的辩证关系：硬件创建新世界，软件拿走利润</h2>
-          </div>
-          <div class="article-author"> <a class="column-link" href="/contents/8/27.html"># 企业热点</a> <span class="article-time" style="margin-left: 0px;"><i class="iconfont icon-shijian"></i> 2017-06-15 13:35</span> <span class="article-time">来源： <a href="/contents/8/27.html">软件世界</a></span> </div>
-           
-          
-          <div class="data-article">
-           
-             <div class="article-img-box" style="box-sizing: border-box; text-align: center; position: relative; color: rgb(51, 51, 51); font-family: Arial, 微软雅黑, &quot;Microsoft yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, &quot;Microsoft Yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><img src="/upload/images/2017/6/29183056487" alt="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></div><div class="article-content-wrap" style="box-sizing: border-box; line-height: 30px; margin-top: 25px; color: rgb(51, 51, 51); font-family: Arial, 微软雅黑, &quot;Microsoft yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, &quot;Microsoft Yahei&quot;, &quot;Hiragino Sans GB&quot;, &quot;冬青黑体简体中文 w3&quot;, STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);"><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">在这篇文章里我们会持续思考一个非常辩证的问题：硬件和软件到底是怎么样一种关系？这种关系之所以重要在于软件公司做硬件或者硬件公司做软件所要跨越的鸿沟实际上无比巨大，背后如果没有充足的理由，那这种挑战必然会以失败告终。而科技的浪潮则正在让不同的公司都必须思考原本不属于自己的领域。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="text-big-title" style="box-sizing: border-box; font-weight: 700; font-size: 20px; color: rgb(164, 29, 29);">硬件创建新世界</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">计算机时代的开始最早可以追溯到1946年的ENIAC，而个人电脑的开始则要从1977年的Appple II开始算起。功能型手机事实上比Apple II还要早一点，1973年的时候摩托罗拉的马丁·库帕就在街头实验了两块砖头大的大哥大。智能手机的标志性事件可以认为是2007年iPhone的发布。&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">从老的大型机到个人电脑，再到智能手机，我们可以发现在行业初期显然的核心驱动力是以硬件为代表的新产品，在行业早期软件是处于协同的角色上的。典型的例子是微软在最开始的IBM PC上发言权并不大，更像一个供货商。而提到智能手机时代的标签时，我们更多的会谈到iPhone(触屏、无键盘灯)而非iOS。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这模式几乎一定会延续下去，没有VR/AR硬件产品，那就不可能有真的VR/AR世界，而当VR/AR自身还处在摸索之中时，那重要的就是把硬件产品做出来，而不是后面的系统和应用平台。所以这两者上的创业公司都是做硬件产品的比如Oculus。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">只有这种新型的计算平台渐趋稳定，才可能会有后面的OS独立，才会有后面应用的大展开，比如新的电商、新的游戏、新的视频内容。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">总结来看，我们可以讲新世界的创建通常是从硬件开始的，但有意思的事情是硬件先锋们通常并不能笑到最后。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">软件拿走利润</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们知道在个人电脑时代最赚钱的企业是微软，在智能机时代最赚钱的手机企业是Google，互联企业更是分享了由电脑、手机、网络基础设施带来的大部分收益。所以总结来看硬件创造的新世界里面的利润其实是被软件企业拿走了。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们并没有清晰的数字来说明究竟Google赚了多少钱并和一般手机厂商进行对比，但至少可以从微软与PC厂商的利润差异上产生一点直观感受：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="img-center-box" style="box-sizing: border-box; text-align: center; display: block;"><img src="/upload/images/2017/6/29183057255.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; text-align: center;"><span class="text-remarks" style="box-sizing: border-box; color: rgb(153, 153, 153); line-height: 30px;">微软每年净利润</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="img-center-box" style="box-sizing: border-box; text-align: center; display: block;"><img src="/upload/images/2017/6/29183057304.png" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; text-align: center;"><span class="text-remarks" style="box-sizing: border-box; color: rgb(153, 153, 153); line-height: 30px;">&nbsp;Dell每年利润</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">Source: statista</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们可以简单统计2003~2012 10年间两者的差异：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span class="img-center-box" style="box-sizing: border-box; text-align: center; display: block;"><img src="/upload/images/2017/6/29183057656.jpg" style="box-sizing: border-box; border: 0px; vertical-align: middle; width: auto; max-width: 100%;"/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">如果想更有针对性，那要做些剔除比如Xbox的收入等，但考虑这个时间段里两家公司的主营业务，即使不做这种细化，其每年净利润的直接对比已经足以说明很多问题了。微软的净利润是Dell的3倍以上，并且在十年间有逐步提高的趋势。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">IBM很可能是认识到了这点，所以非常痛快的把自己的大部分硬件业务都卖掉了。苹果很可能也认识到了这一点，所以在稍微尝试下软件授权业务（把操作系统授权给别家使用）后就立刻退缩了，专注的走软硬一体道路。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这样一来事情就变得非常有意思：硬件企业千辛万苦开辟新世界，但却不能拿到最大的回报，世界似乎很不公平。可为什么会这样呢？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">为什么会这样？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">核心原因在于硬件自身丧失定价权，而软件企业则逐渐成为用户没有选择的平台。简单来讲是软件上更容易产生垄断。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这在PC和Winodws，手机和Android上体现的特别明显。硬件始终是单品，并且越来越标准化。硬件企业每销售一台PC或手机除了可以赚到该有的那部分利润，并没有产生用户粘性。Windows则是每当硬件企业销售出一台PC，其生态就扩大一分，生态扩大的好处主要来自于两个方面：一是更多的应用程序开发商就会更愿意为Windows开发程序；一是用户的数据越多的沉淀到这个系统之中。前者导致大量长尾需求被满足，后者导致没法迁移Office这样应用的使用，最终结果是一种垄断的地位。垄断意味着企业有更大的控制权，而用户选择空间极小。Android与手机的情形显然与此类似。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们可以回放一下整个过程的关键节点：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><ol class=" list-paddingleft-2" style="box-sizing: border-box; margin-bottom: 10px; padding-left: 15px;"><li><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">划时代的新硬件产品出现，这时主导者是硬件厂商。</p></li></ol><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">2. &nbsp;硬件产品上形成统一的软件抽象，这种软件抽象过去主要是操作系统，未来不一定。这时主导者仍然是硬件厂商。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">3. 变为软件厂商。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">4. 硬件产品变得高度货品化，竞争激烈，利润逐步降低。硬件厂商丧失利润空间。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">至少在PC和手机上我们可以清晰的看到这模式几乎完全不走样的变成了现实。在这个模式里面，小的变更是第二点上原来是微软的license fee模式，最新则是Android的开源模式。后者显然对硬件厂商更有诱惑力，明知道是有毒的果子，却也不得不吃。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">未来这模式是可持续的么？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">我们仍然看到很多新的硬件在不断出现，其中一部分显然具有成为大众型产品的潜力，比如手表、汽车、Echo等。那么会否重演上述的模式？答案是肯定的。显然，在智能手表上，很多硬件厂商已经兴高采烈的开始拥抱Android Wear了。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这里的关键点在于，完全的打造一套自己的软件生态，对于硬件厂商而言通常比较吃力，而如果这种巨大投入不能换成产品的附加值，反倒是成为产品体验的减分项，那是得不偿失的。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这时候硬件厂商的选择是：要么赌一把大的，软件上尝试自己主导，但失败风险很高；要么就重复上述的模式。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">把这话题进一步延伸，我们会发现在智能汽车、智能机器人上都存在着同样的结构性机会。都需要回答谁做硬件，谁做软件这样的分工问题。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">在车上面过去并没出现一种统一的操作系统，但自动驾驶的出现很可能改变这种局面。我们要么有很多个苹果式的车企，要么有人以自动驾驶为切入点，让很多车企共享同样的操作系统。当前还是很难预测具体的走势，但小车企多的时候，理论上讲后者的可能性其实非常高。而能确定的是，一旦走上这种软硬分离的道路，那就会重演过往PC和手机走过的模式—硬件开创新世界，软件拿走利润。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><br/></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">这里面形式上最可能发生变化的估计仍然是第二步：2.&nbsp; 硬件产品上形成统一的软件抽象，这种软件抽象过去主要是操作系统，未来不一定。这时主导者仍然是硬件厂商。这种软件抽象并不一定是操作系统，其本质是要转移走硬件的控制权，所以也可以是浏览器、Siri等形式。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p><p class="text-big-title" style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px; font-size: 20px; font-weight: 700; color: rgb(164, 29, 29);">小结</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;"><span style="box-sizing: border-box; font-weight: 700;"><br/></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">许多年前IT行业刚刚兴起，那时候即使大学生也会没事探讨下软件硬件的关系，当然大多时候会陷入那个更重要的争论。今天看来作为一个有机的系统其实你很难区分那个更重要，这是没有答案的，但可以区分的是那个更有控制权，形成事实上的垄断。这种垄断在硬件上要比软件上更难达成，所以就有了上面所说的一切。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0px;">&nbsp;</p></div><p style="white-space: normal;"><strong>昨天、今天、明天，你我都在不断的改变 &nbsp;&nbsp;</strong></p><p style="white-space: normal;"><strong>加入SiteServer，我们一起去探索未来！&nbsp;<img src="/upload/images/2017/7/21384921.png" title="image.png" alt="image.png"/></strong></p><p><br/></p>
-            
-            
-           <a name="comments" anchorname="1"></a>
-            <stl:commentInput></stl:commentInput>
-            
-          </div>
-          <!--相关文章 -->
-          <div class="article-re" id="article-re">
-            <h3><span class="title-re">相关文章</span></h3>
-            <div class="article-tw clearfix">
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;市民不信任司机有意见，Uber的匹兹堡自动驾驶路试难度不小，路况也来捣乱" href="/contents/16/64.html" target="_blank"> <img src="/upload/images/2017/6/20172446227.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;市民不信任司机有意见，Uber的匹兹堡自动驾驶路试难度不小，路况也来捣乱"> </a>
-                  <div class="article-title"> <a href="/contents/16/64.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;市民不信任司机有意见，Uber的匹兹堡自动驾驶路试难度不小，路况也来捣乱</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜与 ofo 正在从低端出发颠覆滴滴？三家的机会与风险" href="/contents/16/63.html" target="_blank"> <img src="/upload/images/2017/6/20172450642.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜与 ofo 正在从低端出发颠覆滴滴？三家的机会与风险"> </a>
-                  <div class="article-title"> <a href="/contents/16/63.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜与 ofo 正在从低端出发颠覆滴滴？三家的机会与风险</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;奥巴马即将卸任之际，要让无人驾驶汽车合法化？" href="/contents/16/62.html" target="_blank"> <img src="/upload/images/2017/6/20172453802.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;奥巴马即将卸任之际，要让无人驾驶汽车合法化？"> </a>
-                  <div class="article-title"> <a href="/contents/16/62.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;奥巴马即将卸任之际，要让无人驾驶汽车合法化？</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="泛生子王思振——成立两年，融资数亿，基因检测如何帮助人类战胜癌症？" href="/contents/16/61.html" target="_blank"> <img src="/upload/images/2017/6/15184731836.jpg" alt="泛生子王思振——成立两年，融资数亿，基因检测如何帮助人类战胜癌症？"> </a>
-                  <div class="article-title"> <a href="/contents/16/61.html" target="_blank">泛生子王思振——成立两年，融资数亿，基因检测如何帮助人类战胜癌症？</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="哒哒英语郅慧——流量这杯毒酒，你还喝吗？" href="/contents/16/60.html" target="_blank"> <img src="/upload/images/2017/6/15184829488.jpg" alt="哒哒英语郅慧——流量这杯毒酒，你还喝吗？"> </a>
-                  <div class="article-title"> <a href="/contents/16/60.html" target="_blank">哒哒英语郅慧——流量这杯毒酒，你还喝吗？</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜单车，死于创新的一百万种方式" href="/contents/16/59.html" target="_blank"> <img src="/upload/images/2017/6/20172457129.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜单车，死于创新的一百万种方式"> </a>
-                  <div class="article-title"> <a href="/contents/16/59.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜单车，死于创新的一百万种方式</a> </div>
-                </div>
-              </div>
-            
-            </div>
-          </div>
-        </div>
-        <!--文章内容结束 --> 
-      </div>
-      <div class="wrap-right pull-right">
-        
-        <div class="widget widget_ztmao_postlist">
-          <div class="box-moder hot-article">
-            <h3>随机推荐文章</h3>
-          </div>
-          <div class="box-moder hot-article"> <span class="span-mark"></span>
-
-
-            <ul class="hots-post-widget">
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/8/25.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/2622224292.png" alt="ROOBO雷宇——拿到1亿美金融资之后，想让机器人帮你约滴滴，订外卖"> </a> </div>
-                <a class="transition" href="/contents/8/25.html" target="_blank">ROOBO雷宇——拿到1亿美金融资之后，想让机器人帮你约滴滴，订外卖</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/8/26.html" target="_blank"> <img class="xyscale" src="/images/timthumb (3).jpg" alt="在科技公司看来，福特汽车最令人羡慕的是什么？"> </a> </div>
-                <a class="transition" href="/contents/8/26.html" target="_blank">在科技公司看来，福特汽车最令人羡慕的是什么？</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/8/27.html" target="_blank"> <img class="xyscale" src="/images/banner-3.jpg" alt="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润"> </a> </div>
-                <a class="transition" href="/contents/8/27.html" target="_blank">硬件与软件的辩证关系：硬件创建新世界，软件拿走利润</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/8/28.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/2622953417.png" alt="宜家开始网上卖货了，虽然一副“冷漠脸”，但北欧设计早被它带热了"> </a> </div>
-                <a class="transition" href="/contents/8/28.html" target="_blank">宜家开始网上卖货了，虽然一副“冷漠脸”，但北欧设计早被它带热了</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/8/29.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/15184937512.jpg" alt="我们一定能够找到诽谤他们和宣布他们为社会渣滓的方法"> </a> </div>
-                <a class="transition" href="/contents/8/29.html" target="_blank">我们一定能够找到诽谤他们和宣布他们为社会渣滓的方法</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/8/30.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/15184712317.jpg" alt="构家网颜传赞——互联网家装常被吐槽，你们想怎么避免？"> </a> </div>
-                <a class="transition" href="/contents/8/30.html" target="_blank">构家网颜传赞——互联网家装常被吐槽，你们想怎么避免？</a> </li>
-            
-            </ul>
-          </div>
-          <div class="placeholder"></div>
-        </div>
-        
-        <div class="widget ztmao_tag">
-          <div class="box-moder hot-article">
-            <h3>热门标签</h3>
-          </div>
-          <div class="box-moder hot-tag"><span class="span-mark"></span>
-            <div class="search-history search-hot">
-              <ul>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=旅游 商家 珠宝" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">旅游 商家 珠宝</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=游戏 王者荣耀 舆论" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">游戏 王者荣耀 舆论</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=乒乓球" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">乒乓球</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=普罗米修斯" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">普罗米修斯</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=冈仁波齐" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">冈仁波齐</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=媒体" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">媒体</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=科技 小米" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">科技 小米</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=互联网 科技" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">互联网 科技</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=星际特工" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">星际特工</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=三星 小米" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">三星 小米</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=无人机 直播 捷豹" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">无人机 直播 捷豹</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=蚂蚁金服 BAT 互联网" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">蚂蚁金服 BAT 互联网</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=人工智能" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">人工智能</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=互联网" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">互联网</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=金融 经济" class="tag-item" title="硬件与软件的辩证关系：硬件创建新世界，软件拿走利润">金融 经济</a></li>
-              
-              </ul>
-            </div>
-          </div>
-          <div class="placeholder"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="col-xs-2">
 </div>
-<!--底部 -->
-<div class="go-top0" id="gotopbtn" > <i class="icon icon-top"></i></div>
-<div class="footer" id="footer">
-  <div class="container">
-    <div class="row">
-      <div class=" col-sm-12 col-md-6 col-lg-6 footer-left">
-        <div class="footer-icon-list pull-right0">
-          <ul>
-            <a href="javascript:">
-            <li class="Qr-code-footer">
-              <div class="app-qrcode">
-                <img width="130" height="130" src="/upload/images/2017/6/17173412614.jpg" />
-              </div>
-              <i class="icon icon-footer icon-footer-wx"></i> </li>
-            </a> <a href="http://t.qq.com/siteserver2011" target="_blank">
-            <li><i class="icon icon-footer icon-footer-inter"></i></li>
-            </a> <a href="https://sscms.com/" target="_blank">
-            <li><i class="icon icon-footer icon-footer-rss"></i></li>
-            </a>
-          </ul>
-        </div>
-      </div>
-      <div class=" col-sm-12 col-md-6 col-lg-6  footer-right">
-        <div class="copy-right">
-          <div class="footer-tag-list"> 
-          
-          <a href="http://stl.siteserver.cn/" target="_blank">关于我们</a> 
-  
-          
-          <a href="http://docs.siteserver.cn/getting-started/index.html" target="_blank">加入我们</a> 
-  
-          
-          <a href="http://blog.siteserver.cn/" target="_blank">联系我们</a> 
-  
-          
-          <a href="http://bbs.siteserver.cn/" target="_blank">友情链接</a> 
-  
-          
-          </div>
-          <span>Copyright © 2003-2020 模板建站</span> </div>
-      </div>
     </div>
-  </div>
 </div>
 
-
-<script src="/js/glodil.js" type="text/javascript"></script> 
-<script src="/js/jquery-ias.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $('.weixin').mouseover(function(){
-  $('.weixin-Qr-code').css({"opacity":"1","margin-left":"70px","display":"block"}),
-  $('.weixin').addClass('disabled')
-    // alert('fdafdsa');
-    });
-    $('.weixin').mouseout(function(){
-  $('.weixin-Qr-code').css({"opacity":"1","margin-left":"70px","display":"none"}),
-  $('.weixin').removeClass('disabled')
-  // alert('fdafdsa');
-  });
-</script> 
-<script type='text/javascript' src='/js/wp-embed.min.js'></script>
+    function back_history() {
+        history.back();
+    }
+</script>
 </body>
+
 </html>

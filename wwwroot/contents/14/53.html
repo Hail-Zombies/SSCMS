@@ -1,365 +1,216 @@
-<!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>
-素人直播，到底是直播的解药还是春药？
--
-娱乐专题
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-<link href="/css/iconfont.css" type="text/css" rel="stylesheet"/>
-<link href="/css/common.css" type="text/css" rel="stylesheet"/>
-<link href="/css/swiper.min.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="/js/jquery.min.js"></script>
-<script type="text/javascript" src="/js/swiper.min.js"></script>
-<script type="text/javascript" src="/js/js.js"></script>
-<link rel='stylesheet' id='style-css'  href='/css/style.css' type='text/css' media='all' />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    
+<!-- ZUI 标准版压缩后的 CSS 文件 -->
+<link rel="stylesheet" href="/zui/css/zui.min.css">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="/zui/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="/zui/js/zui.min.js"></script>
+    <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
+<script src="/swiper/swiper-bundle.min.js"></script>
 </head>
-<body class="post-template-default single single-post postid-218 single-format-gallery">
-<div class="search-box " id="search-box"> <i class="icon icon-search-close js-show-search-box"></i>
-  <div class="search-content overlay-dialog-animate">
-    <div class="search-input">
-      <form id="search-input" role="search" method="get" action="/utils/search.html" onSubmit="return checkinput()">
-        <button type="submit"></button>
-        <input placeholder="请输入关键字，按回车键搜索" name="word" id="search-input">
-        <input type="hidden" name="type" value="Title" id="search-input"/>
-      </form>
+
+
+<body>
+  <div id="anchor_top"></div>
+<!-- 顶部导航栏 -->
+<nav class="navbar navbar-inverse" role="navigation"
+    style="margin-bottom: 0;background-color: black;border-radius: 0;border: 0;">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">标识</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav nav-top" style="font-size:large">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">SVN</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="search-history search-hot"> <span>热搜词</span>
-      <ul>
-      
-      </ul>
-    </div>
-  </div>
-</div> 
-<div id="top_nav" class="header yapiskan">
-  <div class="container">
+</nav>
+<!-- 顶部导航栏结束 -->
+
+<div class="container-fluid">
+    <!-- 母版头 -->
     <div class="row">
-      <div class="top-bar mnav">
-        <button class="navbar-toggle js-open-nav" type="button">
-        <div class="icon-bar"> </div>
-        <div class="icon-bar"> </div>
-        <div class="icon-bar"> </div>
-        </button>
-      </div>
-      <div class="logo mnav"><a href="/index.html">
-        <img src="/upload/images/2017/6/29145430455.png" />
-      </a> </div>
-      <div class="pull-right mnav"> <i class="icon icon-search" id="msearch"></i> </div>
-      <div class="nav-left" id="nav">
-        
-        <ul class="nav-menu clearfix">
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/5.html">资讯动态 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/5.html">科技动态</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/6.html">财经动态</a></li>
-            
-            </ul>
-          
-          </li>
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/8.html">社会新闻 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/8.html">企业热点</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/9.html">社会热点</a></li>
-            
-            </ul>
-          
-          </li>
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/11.html">全球资讯 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/11.html">环球搜讯</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/12.html">国际视野</a></li>
-            
-            </ul>
-          
-          </li>
-        
-          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29">
-          <a href="/channels/14.html">专题活动 
-          <span class="caret"></span>
-          </a>
-            <ul class="sub-menu">
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/14.html">娱乐专题</a></li>
-            
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="/channels/15.html">科技专题</a></li>
-            
-            </ul>
-          
-          </li>
-        
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+            <div class="container-fluid" style="margin-top: 0px; margin-bottom: 0px; ">
+                <img src="/images/148bf7ddd88766bafe822cbc79e132ec.jpeg" alt=" 图片丢失"
+                    style=" width: 100%;height: auto;" />
+                <!-- <div style="margin-top: 2px; margin-bottom: 0px;height:40px;"> </div> -->
+
+                <ul class="nav nav-top nav-simple nav-justified" style="border: 0;background-color:azure">
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/5.html">资讯动态</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/5.html">科技动态</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/6.html">财经动态</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/8.html">社会新闻</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/8.html">企业热点</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/9.html">社会热点</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/11.html">全球资讯</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/11.html">环球搜讯</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/12.html">国际视野</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown  dropdown-hover">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="/channels/14.html">专题活动</a>
+                            <ul class="dropdown-menu">
+                                
+                                    <li>
+                                        <a href="/channels/14.html">娱乐专题</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="/channels/15.html">科技专题</a>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-1">
+            <div class="container">
+    <div class="toolbar-icon">
+        <ul style="list-style-type: none;">
+            <li>
+                <a href="#anchor_top">
+                    <i class="icon icon-chevron-sign-up icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
         </ul>
-        
-      </div>
-      <div class="nav-right">
-        <ul class="clearfix">
-          <li class="wx-li">
-            <div class="wx-pic">
-              <img src="/upload/images/2017/6/17173412614.jpg" />
-              <div class="wx-text"> <span>微信扫一扫</span> </div>
+    </div>
+</div>
+        </div>
+        <div class="col-xs-1">
+        </div>
+    </div>
+    <!-- 母版头结束 -->
+
+    <div class="row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8">
+            <!-- 内容 -->
+            <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
+                <!-- 内容容器 -->
+
+  <article class="article">
+    <header>
+        <h1 style="text-align:center">素人直播，到底是直播的解药还是春药？</h1>
+
+        <dl class="dl-inline">
+            <dt>作者：</dt>
+            <dd id="author">
+            </dd>
+            <dt>最后修订：</dt>
+            <dd id="update_time">
+            </dd>
+            <dd style="float:right" id="class">
+            </dd>
+            <dt style="float:right">栏目：</dt>
+        </dl>
+    </header>
+
+    <section class="content">
+      <p><img class="alignnone size-full wp-image-141" src="/upload/images/2017/6/2015367306.jpg" alt="191300149995" width="800" height="450"/></p><p>如今，不少直播平台正在加速素人直播（即普通人的直播）的步伐。网易新闻直播曾宣称做本地生活化的场景直播，视频网站“六间房”也瞄准了普通人的直播市场，因农村走红的“快手”更是被贴上了“乡村”的标签。</p><p>直播在“飞入寻常百姓家”时，普通老百姓就真的从此有了属于自己的舞台？这些直播平台又是为哪般？他们又还需要考虑什么？</p><p><strong>素人直播成了直播行业的下一站</strong></p><p>其实，仔细想想，大中小各类直播平台开始关注覆盖三四线城市甚至乡镇、农村的素人直播就是命中注定。原因有二：</p><p>1、直播娱乐，成了县城娱乐生活的一剂兴奋剂</p><p>也是几个因素共同作用的结果。</p><p>1）无论三四线城镇还是四线以下的地区，那里娱乐设施匮乏。此前X博士那篇刷屏的《残酷底层物语：一个视频软件的中国农村》虽不全对，但却揭示了中国农村青年或从农村走出的城市底层青年，在精神极度匮乏状态下的原始躁动。对多数年轻人来说，麻将和KTV等娱乐方式对他们的吸引力已经有限，玩电子竞技游戏或直播是他们消遣、娱乐和打发时间的新方式。</p><p>2）他们有大把的休闲时间。不像一线城市的青少年工作学习紧张，娱乐时间寥寥，这些地区的青年们多的是时间。阿里研究院此前的一份报告，在移动用户地域分布变迁中， 一二线城市偏实用，三四线更娱乐，视频、音乐、游戏、娱乐、拍摄美化等是他们使用的主要应用。</p><p>3）受社会消费结构变化影响。中国正向消费型国家过渡，文化娱乐、住宅、旅游等占国内消费的比重将越来越大，其中，县城文化娱乐的消费比重增大最为明显。微博的例子就是明证，在过去一年里，微博的用户数实现了超量增长，尤其是三、四线城市的用户下沉进展明显，而微博连续6个月盈利也是靠网红和直播占领了三四线城市。</p><p>4）基础设施的助力。4G网络快速普及到重点城市之外的城乡，直接结果是县城乡镇的移动互联网用户快速上升，尤其是春节、寒暑假、五一、十一等假期返乡人群成为直播的免费“地推”。另外智能手机厂商渠道下沉战略也在加速县城农村智能手机的普及，于是拿着智能手机玩直播就成为了他们特有的时尚。</p><p>5）“网红”现象点燃了他们成名的梦想。在未来千亿规模的网红经济刺激下，对于这些不安于命运的年轻人，成为“网红”仿佛已经成为实现梦想摆脱现状的途径，而直播则是成为“网红”的快速通道。</p><p>9158的掌舵者傅政军之前就承认，“我们的典型客户就两类，其中90%左右是三四线城市的低收入群体；另外10%则是一些中高收入群体的小老板，如煤老板、包工头等。”</p><p>2、竞争加剧，“到县城去”是直播平台的必选之路</p><p>如今直播行业正趋于高度饱和的状态，尽管形式多样，秀场直播、社交直播、体育直播、游戏直播、弹幕直播、新闻直播、音频直播等不一而足，甚至连睡觉直播、吃饭都在直播，但却掩盖不了越来越同质化的事实。</p><p>而且尽管直播兴起还没有多久，但却是多种“老病”缠身。</p><p>1）因为某些直播平台的利欲熏心，直播一直被认为是藏污纳垢，不入主流。艾媒咨询发布的《2016年中国在线直播行业专题研究》指出，中国77.1%的网民认为在线直播平台存在低俗内容，90.2%的网民认为在线直播平台的整体价值观导向为一般或偏低。</p><p>2、腾讯、阿里、小米、乐视等互联网巨头以及范冰冰、井柏然等明星的加入加剧了行业竞争，整个行业进入到资源比拼，看谁能熬到最后的巷战之中。</p><p>3、工具论让投资者开始有所动摇。目前有一种论调是直播本质还是一个工具，必须搭载合适的关系和场景，未来将被镶嵌到大的平台中，而不是单独形成一个相对闭环的商业体。</p><p>4、疯狂烧钱、商业化受阻、平台数据造假成为行业公开的“秘密”。</p><p>所以新进者也好，老牌平台也罢，要想“熬到最后”，唯有旧瓶装新酒，另辟蹊径，而“到县城去”是避开明星和巨头且还未被完全开垦的战略要地。</p><p>最大的变量：直播能否能让素人成为网红</p><p><strong>这主要表现在：</strong></p><p>1、谁来“保护”他们的原创能力？</p><p>也就是素人如何持续创造好内容。</p><p>1）真正具备原创能力的素人可谓凤毛麟角，他们接触的最多就是那些原始、粗鄙、野蛮的东西，并又缺乏专业训练和前期长久的积累，毕竟庞麦郎只有一个， 2015年初爆红网络的农民女诗人余秀华也只有一个。</p><p>2）在时间上很难持续，即便不要求每个博主都饱读诗书、琴棋书画样样精通，即便他们的猎奇吐槽、扮丑搞笑、又或鸡汤或卖萌都能招来关注，但直播是个持续的活，每天猎奇每天搞笑也是个不太可能的事。内容质量和数量与博主的能力相关，他们只能随着时间线性增长。Papi酱如果让她每天都来自播，她也会“江郎才尽”。</p><p>3）平台上在UGC和 PGC上如何抉择。考虑到内容沉淀，平台方是该重视美妆、旅游、财经、美食、影视、汽车、音乐、体育等某一垂直领域PGC内容的产出，还是该保护广大素人UGC的野蛮生长。</p><p>2、谁来“输血”避免他们被遗弃？</p><p><strong>简单的说就是直播平台如何处理头部用户和长尾用户的关系，避免多数用户无流量无关注。这个担心来源于两个方面：</strong></p><p>1）赢者通吃会不会也在直播界出现？直播平台为了流量为了市场地位，高薪挖角、拉来明星等啥招都能使，于是就造成了直播界都是高薪的泡沫和假象。类似的视频平台为争抢头部内容版权（一般为热门电影电视剧）最后各个头破血流就是提醒。事实上，新加入的主播，要获得流量，难上加难，更何况无资源无背景的多数素人，谁来给他们保证流量？</p><p>2）直播平台会不会也出现“蒸发冷却效应”，当直播平台注意力都集中在有限的头部用户身上，那些高质量长尾的用户就会逃离，到最后就剩下无技能也无知觉的用户。当年微博一批明星脑残粉和水军涌入后，也就出现了这样的悲剧，直播平台会不会重蹈覆辙，那些核心的长尾用户惨遭挤出。</p><p>况且直播这类平台本身就是漏斗，素人如若成为不了头部内容资源，除了陪跑凑热闹，又如何来获取流量？</p><p>3、谁来“教导”他们学会职业化？</p><p>最后，如果素人把直播当做自己新的职业，那更大的问题是如何来完成职业化。</p><p>为什么老罗的演讲、郭德纲的相声、Papi的短视频等都精彩绝伦？为什么范冰冰、TFBOYS等一线明星用直播就如此驾轻就熟？</p><p>因为他们事先经过精心准备和策划，排练过精益求精过，也因为他们长期锻炼，更因为他们幕后有专业团队。</p><p>这就正好解释网红孵化器、网红商学院如今为什么这么火。</p><p>而对于素人县城老百姓来说，不仅需要提升自己的声音和图像的处理设备，更需要专业团队给予支持，为其培训、孵化、包装等。如今微博都已开始与网红经纪公司合作，可惜针对素人的孵化可谓寥寥。</p><p>而对于素人，人人都希望成为“搬砖小伟”，他在参加了浙江卫视的《中国梦想秀》，江苏卫视的《极限勇士》后，又在尝试电商变现，其背后更有各类力量鼎力相助。</p><p>但，响铃依然相信素人直播会有看头，因为痛点恰好是需求所在。《三体》里有一句话：“弱小和无知，不是生存的障碍，傲慢才是。”或许几年后，当我们回头看那些忒不起眼的素人和这些押宝素人直播的平台们时，我们才会意识到当年自己因“看不起”嘲笑或因“看不懂”无视素人直播正是傲慢在作怪。因为，现在素人直播还仅是开始。</p><p><br/></p>
+    </section>
+  </article>
+  <!-- 内容容器结束 -->
             </div>
-            <i class="icon wx-icon"></i><span>微信</span><em class="guide-prompt" style="display: none;"></em> </li>
-          <li class="search-li"><i class="icon icon-search "></i><span>搜索</span></li>
-          <li class="login-li"><a href="/home/pages/login.html?returnUrl=/contents/14/53.html/" target="_blank" title="登录网站">登录</a></li>
+<!-- 内容结束 -->
+<div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
+    <footer>
+        <HR align=center width=100% color=#987cb9 SIZE=2>
+        <ul class="nav nav-pills nav-justified" style="padding: 0 10%;">
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
         </ul>
-      </div>
-    </div>
-  </div>
+    </footer>
 </div>
-<div id="content-article">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-lg-8 cont-left"> 
-        <!--文章内容开始left -->
-        <div class="article-left-btn-group">
-          <ul>
-            <li> <a href="http://t.qq.com/siteserver2011" class="long-weibo" target="_blank"> <i class="icon icon-article icon-article-wb js-weibo js-share-article" data-location="article" data-f="pc-weibo-article"></i> </a> </li>
-            <li class="weixin" data-f="pc-friends-article">
-              <div class="weixin-Qr-code" style="opacity: 1; margin-left: 70px; display: none;">
-                <img width="130" height="130" src="/upload/images/2017/6/17173412614.jpg" /> </div>
-              <a><i class="icon icon-article icon-article-pyq"></i></a> </li>
-            
-            <li> <a href="#comments"> <i class="icon icon-article icon-article-pl">评论</i></a> </li>
-          </ul>
         </div>
-        
-        <div id="detail-article"> 
-          
-          <div class="da-title"> <a>
-            <img src="/upload/images/2017/6/2614359131.png" />
-          </a>
-            <h2>素人直播，到底是直播的解药还是春药？</h2>
-          </div>
-          <div class="article-author"> <a class="column-link" href="/contents/14/53.html"># 娱乐专题</a> <span class="article-time" style="margin-left: 0px;"><i class="iconfont icon-shijian"></i> 2017-06-20 15:36</span> <span class="article-time">来源： <a href="/contents/14/53.html"></a></span> </div>
-           
-          
-          <div class="data-article">
-           
-             <p><img class="alignnone size-full wp-image-141" src="/upload/images/2017/6/2015367306.jpg" alt="191300149995" width="800" height="450"/></p><p>如今，不少直播平台正在加速素人直播（即普通人的直播）的步伐。网易新闻直播曾宣称做本地生活化的场景直播，视频网站“六间房”也瞄准了普通人的直播市场，因农村走红的“快手”更是被贴上了“乡村”的标签。</p><p>直播在“飞入寻常百姓家”时，普通老百姓就真的从此有了属于自己的舞台？这些直播平台又是为哪般？他们又还需要考虑什么？</p><p><strong>素人直播成了直播行业的下一站</strong></p><p>其实，仔细想想，大中小各类直播平台开始关注覆盖三四线城市甚至乡镇、农村的素人直播就是命中注定。原因有二：</p><p>1、直播娱乐，成了县城娱乐生活的一剂兴奋剂</p><p>也是几个因素共同作用的结果。</p><p>1）无论三四线城镇还是四线以下的地区，那里娱乐设施匮乏。此前X博士那篇刷屏的《残酷底层物语：一个视频软件的中国农村》虽不全对，但却揭示了中国农村青年或从农村走出的城市底层青年，在精神极度匮乏状态下的原始躁动。对多数年轻人来说，麻将和KTV等娱乐方式对他们的吸引力已经有限，玩电子竞技游戏或直播是他们消遣、娱乐和打发时间的新方式。</p><p>2）他们有大把的休闲时间。不像一线城市的青少年工作学习紧张，娱乐时间寥寥，这些地区的青年们多的是时间。阿里研究院此前的一份报告，在移动用户地域分布变迁中， 一二线城市偏实用，三四线更娱乐，视频、音乐、游戏、娱乐、拍摄美化等是他们使用的主要应用。</p><p>3）受社会消费结构变化影响。中国正向消费型国家过渡，文化娱乐、住宅、旅游等占国内消费的比重将越来越大，其中，县城文化娱乐的消费比重增大最为明显。微博的例子就是明证，在过去一年里，微博的用户数实现了超量增长，尤其是三、四线城市的用户下沉进展明显，而微博连续6个月盈利也是靠网红和直播占领了三四线城市。</p><p>4）基础设施的助力。4G网络快速普及到重点城市之外的城乡，直接结果是县城乡镇的移动互联网用户快速上升，尤其是春节、寒暑假、五一、十一等假期返乡人群成为直播的免费“地推”。另外智能手机厂商渠道下沉战略也在加速县城农村智能手机的普及，于是拿着智能手机玩直播就成为了他们特有的时尚。</p><p>5）“网红”现象点燃了他们成名的梦想。在未来千亿规模的网红经济刺激下，对于这些不安于命运的年轻人，成为“网红”仿佛已经成为实现梦想摆脱现状的途径，而直播则是成为“网红”的快速通道。</p><p>9158的掌舵者傅政军之前就承认，“我们的典型客户就两类，其中90%左右是三四线城市的低收入群体；另外10%则是一些中高收入群体的小老板，如煤老板、包工头等。”</p><p>2、竞争加剧，“到县城去”是直播平台的必选之路</p><p>如今直播行业正趋于高度饱和的状态，尽管形式多样，秀场直播、社交直播、体育直播、游戏直播、弹幕直播、新闻直播、音频直播等不一而足，甚至连睡觉直播、吃饭都在直播，但却掩盖不了越来越同质化的事实。</p><p>而且尽管直播兴起还没有多久，但却是多种“老病”缠身。</p><p>1）因为某些直播平台的利欲熏心，直播一直被认为是藏污纳垢，不入主流。艾媒咨询发布的《2016年中国在线直播行业专题研究》指出，中国77.1%的网民认为在线直播平台存在低俗内容，90.2%的网民认为在线直播平台的整体价值观导向为一般或偏低。</p><p>2、腾讯、阿里、小米、乐视等互联网巨头以及范冰冰、井柏然等明星的加入加剧了行业竞争，整个行业进入到资源比拼，看谁能熬到最后的巷战之中。</p><p>3、工具论让投资者开始有所动摇。目前有一种论调是直播本质还是一个工具，必须搭载合适的关系和场景，未来将被镶嵌到大的平台中，而不是单独形成一个相对闭环的商业体。</p><p>4、疯狂烧钱、商业化受阻、平台数据造假成为行业公开的“秘密”。</p><p>所以新进者也好，老牌平台也罢，要想“熬到最后”，唯有旧瓶装新酒，另辟蹊径，而“到县城去”是避开明星和巨头且还未被完全开垦的战略要地。</p><p>最大的变量：直播能否能让素人成为网红</p><p><strong>这主要表现在：</strong></p><p>1、谁来“保护”他们的原创能力？</p><p>也就是素人如何持续创造好内容。</p><p>1）真正具备原创能力的素人可谓凤毛麟角，他们接触的最多就是那些原始、粗鄙、野蛮的东西，并又缺乏专业训练和前期长久的积累，毕竟庞麦郎只有一个， 2015年初爆红网络的农民女诗人余秀华也只有一个。</p><p>2）在时间上很难持续，即便不要求每个博主都饱读诗书、琴棋书画样样精通，即便他们的猎奇吐槽、扮丑搞笑、又或鸡汤或卖萌都能招来关注，但直播是个持续的活，每天猎奇每天搞笑也是个不太可能的事。内容质量和数量与博主的能力相关，他们只能随着时间线性增长。Papi酱如果让她每天都来自播，她也会“江郎才尽”。</p><p>3）平台上在UGC和 PGC上如何抉择。考虑到内容沉淀，平台方是该重视美妆、旅游、财经、美食、影视、汽车、音乐、体育等某一垂直领域PGC内容的产出，还是该保护广大素人UGC的野蛮生长。</p><p>2、谁来“输血”避免他们被遗弃？</p><p><strong>简单的说就是直播平台如何处理头部用户和长尾用户的关系，避免多数用户无流量无关注。这个担心来源于两个方面：</strong></p><p>1）赢者通吃会不会也在直播界出现？直播平台为了流量为了市场地位，高薪挖角、拉来明星等啥招都能使，于是就造成了直播界都是高薪的泡沫和假象。类似的视频平台为争抢头部内容版权（一般为热门电影电视剧）最后各个头破血流就是提醒。事实上，新加入的主播，要获得流量，难上加难，更何况无资源无背景的多数素人，谁来给他们保证流量？</p><p>2）直播平台会不会也出现“蒸发冷却效应”，当直播平台注意力都集中在有限的头部用户身上，那些高质量长尾的用户就会逃离，到最后就剩下无技能也无知觉的用户。当年微博一批明星脑残粉和水军涌入后，也就出现了这样的悲剧，直播平台会不会重蹈覆辙，那些核心的长尾用户惨遭挤出。</p><p>况且直播这类平台本身就是漏斗，素人如若成为不了头部内容资源，除了陪跑凑热闹，又如何来获取流量？</p><p>3、谁来“教导”他们学会职业化？</p><p>最后，如果素人把直播当做自己新的职业，那更大的问题是如何来完成职业化。</p><p>为什么老罗的演讲、郭德纲的相声、Papi的短视频等都精彩绝伦？为什么范冰冰、TFBOYS等一线明星用直播就如此驾轻就熟？</p><p>因为他们事先经过精心准备和策划，排练过精益求精过，也因为他们长期锻炼，更因为他们幕后有专业团队。</p><p>这就正好解释网红孵化器、网红商学院如今为什么这么火。</p><p>而对于素人县城老百姓来说，不仅需要提升自己的声音和图像的处理设备，更需要专业团队给予支持，为其培训、孵化、包装等。如今微博都已开始与网红经纪公司合作，可惜针对素人的孵化可谓寥寥。</p><p>而对于素人，人人都希望成为“搬砖小伟”，他在参加了浙江卫视的《中国梦想秀》，江苏卫视的《极限勇士》后，又在尝试电商变现，其背后更有各类力量鼎力相助。</p><p>但，响铃依然相信素人直播会有看头，因为痛点恰好是需求所在。《三体》里有一句话：“弱小和无知，不是生存的障碍，傲慢才是。”或许几年后，当我们回头看那些忒不起眼的素人和这些押宝素人直播的平台们时，我们才会意识到当年自己因“看不起”嘲笑或因“看不懂”无视素人直播正是傲慢在作怪。因为，现在素人直播还仅是开始。</p><p><br/></p>
-            
-            
-           <a name="comments" anchorname="1"></a>
-            <stl:commentInput></stl:commentInput>
-            
-          </div>
-          <!--相关文章 -->
-          <div class="article-re" id="article-re">
-            <h3><span class="title-re">相关文章</span></h3>
-            <div class="article-tw clearfix">
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;市民不信任司机有意见，Uber的匹兹堡自动驾驶路试难度不小，路况也来捣乱" href="/contents/16/64.html" target="_blank"> <img src="/upload/images/2017/6/20172446227.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;市民不信任司机有意见，Uber的匹兹堡自动驾驶路试难度不小，路况也来捣乱"> </a>
-                  <div class="article-title"> <a href="/contents/16/64.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;市民不信任司机有意见，Uber的匹兹堡自动驾驶路试难度不小，路况也来捣乱</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜与 ofo 正在从低端出发颠覆滴滴？三家的机会与风险" href="/contents/16/63.html" target="_blank"> <img src="/upload/images/2017/6/20172450642.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜与 ofo 正在从低端出发颠覆滴滴？三家的机会与风险"> </a>
-                  <div class="article-title"> <a href="/contents/16/63.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜与 ofo 正在从低端出发颠覆滴滴？三家的机会与风险</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;奥巴马即将卸任之际，要让无人驾驶汽车合法化？" href="/contents/16/62.html" target="_blank"> <img src="/upload/images/2017/6/20172453802.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;奥巴马即将卸任之际，要让无人驾驶汽车合法化？"> </a>
-                  <div class="article-title"> <a href="/contents/16/62.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;奥巴马即将卸任之际，要让无人驾驶汽车合法化？</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="泛生子王思振——成立两年，融资数亿，基因检测如何帮助人类战胜癌症？" href="/contents/16/61.html" target="_blank"> <img src="/upload/images/2017/6/15184731836.jpg" alt="泛生子王思振——成立两年，融资数亿，基因检测如何帮助人类战胜癌症？"> </a>
-                  <div class="article-title"> <a href="/contents/16/61.html" target="_blank">泛生子王思振——成立两年，融资数亿，基因检测如何帮助人类战胜癌症？</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="哒哒英语郅慧——流量这杯毒酒，你还喝吗？" href="/contents/16/60.html" target="_blank"> <img src="/upload/images/2017/6/15184829488.jpg" alt="哒哒英语郅慧——流量这杯毒酒，你还喝吗？"> </a>
-                  <div class="article-title"> <a href="/contents/16/60.html" target="_blank">哒哒英语郅慧——流量这杯毒酒，你还喝吗？</a> </div>
-                </div>
-              </div>
-            
-              <div class=" col-xs-6 col-sm-4 col-md-4 col-lg-4 art-re-img">
-                <div class="article-box transition"> <a title="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜单车，死于创新的一百万种方式" href="/contents/16/59.html" target="_blank"> <img src="/upload/images/2017/6/20172457129.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜单车，死于创新的一百万种方式"> </a>
-                  <div class="article-title"> <a href="/contents/16/59.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;摩拜单车，死于创新的一百万种方式</a> </div>
-                </div>
-              </div>
-            
-            </div>
-          </div>
-        </div>
-        <!--文章内容结束 --> 
-      </div>
-      <div class="wrap-right pull-right">
-        
-        <div class="widget widget_ztmao_postlist">
-          <div class="box-moder hot-article">
-            <h3>随机推荐文章</h3>
-          </div>
-          <div class="box-moder hot-article"> <span class="span-mark"></span>
-
-
-            <ul class="hots-post-widget">
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/48.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/20153633875.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;2016好莱坞薪酬大起底：周迅霍建华的过亿片酬超过好莱坞大明星"> </a> </div>
-                <a class="transition" href="/contents/14/48.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;2016好莱坞薪酬大起底：周迅霍建华的过亿片酬超过好莱坞大明星</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/49.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/2015363111.jpg" alt="张一白卸任“产品经理”专心做导演，因为中国电影产业更成体系了？"> </a> </div>
-                <a class="transition" href="/contents/14/49.html" target="_blank">张一白卸任“产品经理”专心做导演，因为中国电影产业更成体系了？</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/50.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/20153627207.jpg" alt="明星跨界资本成“重灾区”？黄渤1.7亿股份或成“泡影”"> </a> </div>
-                <a class="transition" href="/contents/14/50.html" target="_blank">明星跨界资本成“重灾区”？黄渤1.7亿股份或成“泡影”</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/51.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/20153558596.jpg" alt="湖南卫视内部不允许跟风做节目？《全员加速中》明年不会再出现了"> </a> </div>
-                <a class="transition" href="/contents/14/51.html" target="_blank">湖南卫视内部不允许跟风做节目？《全员加速中》明年不会再出现了</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/52.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/20153554427.jpg" alt="&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;为什么今日头条捂着直播这张好牌不打？"> </a> </div>
-                <a class="transition" href="/contents/14/52.html" target="_blank">&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;为什么今日头条捂着直播这张好牌不打？</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/53.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/2015367306.jpg" alt="素人直播，到底是直播的解药还是春药？"> </a> </div>
-                <a class="transition" href="/contents/14/53.html" target="_blank">素人直播，到底是直播的解药还是春药？</a> </li>
-            
-              <li>
-                <div class="hot-article-img"> <a href="/contents/14/54.html" target="_blank"> <img class="xyscale" src="/upload/images/2017/6/20153424880.jpg" alt="这位56岁的诗人导演，是阿里影业对青年导演“A计划”的落地标本"> </a> </div>
-                <a class="transition" href="/contents/14/54.html" target="_blank">这位56岁的诗人导演，是阿里影业对青年导演“A计划”的落地标本</a> </li>
-            
-            </ul>
-          </div>
-          <div class="placeholder"></div>
-        </div>
-        
-        <div class="widget ztmao_tag">
-          <div class="box-moder hot-article">
-            <h3>热门标签</h3>
-          </div>
-          <div class="box-moder hot-tag"><span class="span-mark"></span>
-            <div class="search-history search-hot">
-              <ul>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=旅游 商家 珠宝" class="tag-item" title="素人直播，到底是直播的解药还是春药？">旅游 商家 珠宝</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=游戏 王者荣耀 舆论" class="tag-item" title="素人直播，到底是直播的解药还是春药？">游戏 王者荣耀 舆论</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=乒乓球" class="tag-item" title="素人直播，到底是直播的解药还是春药？">乒乓球</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=普罗米修斯" class="tag-item" title="素人直播，到底是直播的解药还是春药？">普罗米修斯</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=冈仁波齐" class="tag-item" title="素人直播，到底是直播的解药还是春药？">冈仁波齐</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=媒体" class="tag-item" title="素人直播，到底是直播的解药还是春药？">媒体</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=科技 小米" class="tag-item" title="素人直播，到底是直播的解药还是春药？">科技 小米</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=互联网 科技" class="tag-item" title="素人直播，到底是直播的解药还是春药？">互联网 科技</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=星际特工" class="tag-item" title="素人直播，到底是直播的解药还是春药？">星际特工</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=三星 小米" class="tag-item" title="素人直播，到底是直播的解药还是春药？">三星 小米</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=无人机 直播 捷豹" class="tag-item" title="素人直播，到底是直播的解药还是春药？">无人机 直播 捷豹</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=蚂蚁金服 BAT 互联网" class="tag-item" title="素人直播，到底是直播的解药还是春药？">蚂蚁金服 BAT 互联网</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=人工智能" class="tag-item" title="素人直播，到底是直播的解药还是春药？">人工智能</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=互联网" class="tag-item" title="素人直播，到底是直播的解药还是春药？">互联网</a></li>
-              
-                <li class="transition"><a href="/utils/tags.html?tagName=金融 经济" class="tag-item" title="素人直播，到底是直播的解药还是春药？">金融 经济</a></li>
-              
-              </ul>
-            </div>
-          </div>
-          <div class="placeholder"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="col-xs-2">
 </div>
-<!--底部 -->
-<div class="go-top0" id="gotopbtn" > <i class="icon icon-top"></i></div>
-<div class="footer" id="footer">
-  <div class="container">
-    <div class="row">
-      <div class=" col-sm-12 col-md-6 col-lg-6 footer-left">
-        <div class="footer-icon-list pull-right0">
-          <ul>
-            <a href="javascript:">
-            <li class="Qr-code-footer">
-              <div class="app-qrcode">
-                <img width="130" height="130" src="/upload/images/2017/6/17173412614.jpg" />
-              </div>
-              <i class="icon icon-footer icon-footer-wx"></i> </li>
-            </a> <a href="http://t.qq.com/siteserver2011" target="_blank">
-            <li><i class="icon icon-footer icon-footer-inter"></i></li>
-            </a> <a href="https://sscms.com/" target="_blank">
-            <li><i class="icon icon-footer icon-footer-rss"></i></li>
-            </a>
-          </ul>
-        </div>
-      </div>
-      <div class=" col-sm-12 col-md-6 col-lg-6  footer-right">
-        <div class="copy-right">
-          <div class="footer-tag-list"> 
-          
-          <a href="http://stl.siteserver.cn/" target="_blank">关于我们</a> 
-  
-          
-          <a href="http://docs.siteserver.cn/getting-started/index.html" target="_blank">加入我们</a> 
-  
-          
-          <a href="http://blog.siteserver.cn/" target="_blank">联系我们</a> 
-  
-          
-          <a href="http://bbs.siteserver.cn/" target="_blank">友情链接</a> 
-  
-          
-          </div>
-          <span>Copyright © 2003-2020 模板建站</span> </div>
-      </div>
     </div>
-  </div>
 </div>
 
-
-<script src="/js/glodil.js" type="text/javascript"></script> 
-<script src="/js/jquery-ias.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-  $('.weixin').mouseover(function(){
-  $('.weixin-Qr-code').css({"opacity":"1","margin-left":"70px","display":"block"}),
-  $('.weixin').addClass('disabled')
-    // alert('fdafdsa');
-    });
-    $('.weixin').mouseout(function(){
-  $('.weixin-Qr-code').css({"opacity":"1","margin-left":"70px","display":"none"}),
-  $('.weixin').removeClass('disabled')
-  // alert('fdafdsa');
-  });
-</script> 
-<script type='text/javascript' src='/js/wp-embed.min.js'></script>
+    function back_history() {
+        history.back();
+    }
+</script>
 </body>
+
 </html>

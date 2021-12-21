@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <stl:include file="/include/openzui.html"></stl:include>
+    <stl:include file="/include/swiper.html"></stl:include>
+</head>
+
+
+<body>
+  <stl:include file="/include/head.html"></stl:include>
+
+  <article class="article">
+    <header>
+        <h1 style="text-align:center"><stl:content type="Title"></stl:content></h1>
+
+        <dl class="dl-inline">
+            <dt>作者：</dt>
+            <dd id="author">
+            </dd>
+            <dt>最后修订：</dt>
+            <dd id="update_time">
+            </dd>
+            <dd style="float:right" id="class">
+            </dd>
+            <dt style="float:right">栏目：</dt>
+        </dl>
+    </header>
+
+    <section class="content">
+      <stl:content type="Content"></stl:content>
+    </section>
+  </article>
+  <stl:include file="/include/foot.html"></stl:include>
+</body>
+
+</html>

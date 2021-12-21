@@ -1,7 +1,7 @@
 <div id="anchor_top"></div>
 <!-- 顶部导航栏 -->
 <nav class="navbar navbar-inverse" role="navigation"
-     style="margin-bottom: 0;background-color: black;border-radius: 0;border: 0;">
+    style="margin-bottom: 0;background-color: black;border-radius: 0;border: 0;">
     <div class="col-md-8 col-md-offset-2">
         <div class="navbar-header">
             <a class="navbar-brand" href="/">标识</a>
@@ -42,16 +42,18 @@
         <div class="col-xs-8">
             <div class="container-fluid" style="margin-top: 0px; margin-bottom: 0px; ">
                 <img src="/images/148bf7ddd88766bafe822cbc79e132ec.jpeg" alt=" 图片丢失"
-                     style=" width: 100%;height: auto;" />
+                    style=" width: 100%;height: auto;" />
                 <!-- <div style="margin-top: 2px; margin-bottom: 0px;height:40px;"> </div> -->
-                
+
                 <ul class="nav nav-top nav-simple nav-justified" style="border: 0;background-color:azure">
                     <stl:channels topLevel="0" groupChannel="nav">
                         <li class="dropdown  dropdown-hover">
                             <stl:a class="dropdown-toggle" data-toggle="dropdown">{Channel.Title}</stl:a>
                             <ul class="dropdown-menu">
                                 <stl:channels>
-                                    <li> <stl:a>{Channel.Title}</stl:a></li>
+                                    <li>
+                                        <stl:a>{Channel.Title}</stl:a>
+                                    </li>
                                 </stl:channels>
                             </ul>
                         </li>
@@ -60,30 +62,14 @@
             </div>
         </div>
         <div class="col-xs-1">
-            <div class="container">
-                <div class="toolbar-icon">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <a href="Editor">
-                                <i class="icon icon-edit icon-5x"
-                                   style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" onclick="back_history()">
-                                <i class="icon icon-chevron-sign-left icon-5x"
-                                   style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#anchor_top">
-                                <i class="icon icon-chevron-sign-up icon-5x"
-                                   style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <stl:if type="TemplateType" op="Equals" value="ContentTemplate">
+                <stl:yes>
+                    <stl:include file="/include/content_toolbox.html"></stl:include>
+                </stl:yes>
+                <stl:no>
+                    <stl:include file="/include/index_toolbox.html"></stl:include>
+                </stl:no>
+            </stl:if>
         </div>
         <div class="col-xs-1">
         </div>
