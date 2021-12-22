@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/8.html">企业热点</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">宜家开始网上卖货了，虽然一副“冷漠脸”，但北欧设计早被它带热了</h1>
+        <h1 style="text-align:center;margin-top: 10px;">宜家开始网上卖货了，虽然一副“冷漠脸”，但北欧设计早被它带热了</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-14 10:09:39
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：企业热点</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p><img class="size-full wp-image-335 aligncenter" src="/upload/images/2017/6/15185534204.jpg" alt="timg" width="515" height="335"/></p><p>目前宜家网上商城的运营及配送都仅限上海地区，物流方面会和现有供应商以及第三方合作，至于未来是否会推广向别的地区，宜家表示还得看上海地区的试点数据。</p><p>做电商？来自北欧的一张冷漠脸</p><p>瑞典人一直这么谨慎，尤其是对于电商，本来人家没打算做的。2008年宜家创始人 Ingvar Kamprad 甚至表示 ：“网页上可以做买卖，却会减少来店的客人，这样便会失去一些额外的生意。”</p><p>早在两年前，记者就<a href="https://www.huxiu.com/article/40180/1.html" target="_blank">有文章</a>对自外于电商热潮的宜家进行过分析，宜家在家居品类的特殊优势、自营自产自销的全产业链的商业模式和生活方式的购物氛围让宜家有底气在天猫、京东和居然之家、红星美凯龙的围堵下闲庭信步。</p><p>但人们消费行为的改变还是促使宜家自2012年起在欧洲市场开始网上售卖，不过线上销售额虽然增速喜人，但对于销售总额的贡献小到可以忽略不计（不超过5%）。这更迎合了以实体店为基础的宜家对于电商的冷漠态度。</p><p>在中国市场，一个有趣的现象似乎也能看出宜家对于实体店的重视 —— 很多人跑去宜家在沙发上打盹，甚至干脆在样品上千姿百态地大睡特睡。这事不仅被官方媒体报道过，外媒也颇为好奇不断探究，不过还是宜家本人最淡定，有国内媒体报道说宜家计划严禁不礼貌行为，但这些规定从未强制推行，因为看重线下体验的宜家相信，在这个有十亿消费者的国度里，在其门店内入睡的人，有朝一日会做出把家具带回家的决定。</p><p>线上售卖家具会带来高昂的物流成本，无法给消费者真实的体验、展示的品类有限、更没办法促使消费者在场景体验中产生“冲动消费”，这或许是宜家迟迟未在中国开展电商业务所主要考虑的现实问题。</p><p>截止目前，宜家已经在中国开了21家门店，并计划在明年再开3家新店，但对于电商业务的更多计划，宜家表示没有明确的时间表，也还没有跟其他第三方平台合作的打算。</p><p>宜家带热了北欧设计，但北欧设计可不止宜家</p><p>实体店的热度和收入是宜家冷漠脸对待电商的信心来源，虽然对于1998年开始在中国设置卖场的宜家来说，18年20家店这样的扩张速度实在显得过于稳健。但随着中国消费者购买力的增长，宜家在中国市场的销售额财报显示，上一财年中国消费者为宜家的20家门店（截止上一财年）贡献了&nbsp;117 亿元的销售额。</p><p>在品牌认知上，宜家也从一开始的“小资”品牌，逐渐被重新认知为大众品牌，对于中国年轻一代的消费者来说，每到搬家、添置家具的时候，宜家是他们想到的第一去处。</p><p>在审美层面上，线下触达消费者的宜家还使强调功能性、线条简洁、色彩低调、使用低成本原材料的斯堪的纳维亚设计风格(Scandinavian Design)，也就是我们现在所说的极简北欧设计，带进了中国消费者的视野，也逐渐渗透到审美观。宜家之于斯堪的纳维亚风，可能就类似于MUJI 之于日式设计。</p><p>于是，我们看到越来越多的北欧家居品牌被中国消费者提起，当年轻的消费者迈入白领或者中产阶级，他们可能会去选择价位更高的北欧风格的设计师品牌或是小众品牌。这些年，人们称这个现象为“消费升级”。</p><p>也就是说，“便宜大碗” 的宜家带热了极简北欧风，但人们也越来越认识到北欧设计不止宜家。来自芬兰的ARTEK、来自丹麦的&nbsp;HAY、By lassen 等中高端品牌逐渐进入了大家的视野：</p><p>成立于1935年的&nbsp;ARTEK 可以说是北欧风格的代名词，乍一看，ARTEK 的很多样式和宜家区别不大，但&nbsp;ARTEK 在材质上更倾向于选择木头等自然材料，相对而言比较厚重，价格嘛，自然也就不同。</p><p><br/></p><ul class="commentlist comment-list clear block list-paddingleft-2"></ul>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <li class="previous"><a href="/contents/8/29.html"><i class="icon-arrow-left"></i> 上一篇</a></li>
+         
+          <li>
+            <a href="/channels/8.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          <li class="next"><a href="/contents/8/27.html">下一篇 <i class="icon-arrow-right"></i></a></li>
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

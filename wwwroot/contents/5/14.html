@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/5.html">科技动态</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">被誉为下一个BAT级别巨头的蚂蚁金服，是如何进行投资布局的？</h1>
+        <h1 style="text-align:center;margin-top: 10px;">被誉为下一个BAT级别巨头的蚂蚁金服，是如何进行投资布局的？</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-14 10:09:38
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：科技动态</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">蚂蚁金融服务集团在最近六个月里，密集投资了10家公司，从滴滴出行到百盛中国，覆盖了餐饮O2O、交通出行、影视、私募基金数据、生物识别技术等领域。事实上，蚂蚁金服自正式成立以来，其投融资活动即非常活跃。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">据《财经》记者统计，截至2016年9月26日，蚂蚁金服共进行了30起对外投资，其中有1项仍在等待监管部门审批。由于披露信息有限，据不完全统计，其投资金额总计223.7亿元人民币（33.9亿美元）以上。这30起投资不仅覆盖了银行、股票、证券、保险、基金、消费金融等金融类项目，还涉及餐饮、媒体、影视等非金融类项目。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">目前，蚂蚁金服是中国估值最高的未上市公司，它被誉为是下一个BAT级别的巨头。2015年7月，蚂蚁金服完成了120亿元人民币的A轮融资，估值达450亿美元。而仅在八个月后，蚂蚁金服进行了45亿美元的B轮融资，其估值上涨三分之一，高达600亿美元。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">蚂蚁金服副总裁、投融资事业群负责人韩歆毅曾在B轮融资后对《华尔街日报》表示，蚂蚁金服正从中国的金融领域引入战略合作伙伴，以帮助其扩展至中国乡村地区，并为收购计划提供资金。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">2016年9月，里昂证券驻香港的通信与互联网行业研究主管梁向奕(Elinor Leung)称，蚂蚁金服的估值可能高达750亿美元，此数字已经超越华尔街投行高盛集团，后者的市值约为700亿美元。这也意味着如果蚂蚁金服成功上市，其市值将有望超过百度，成为中国互联网行业的第三大公司，也是中国最大的互联网金融集团。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在梁向奕的估值模型中，蚂蚁金服的大部分价值来自支付宝，支付宝的估值约500亿美元，占整体估值的67％。另外，蚂蚁金服的小额贷款业务估值约80亿美元，财富管理业务的估值约70亿美元，剩下的50亿美元估值来自于投资及现金。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">蚂蚁金服的大部分估值由支付宝支撑，但支付宝的市场地位正面临微信支付的挑战。据艾瑞咨询数据，2015年全年中国第三方移动支付市场份额中，支付宝占据68.4％稳坐龙头地位，第二名财付通只有20.6％。但在2016年Q1，支付宝的市场份额下滑至51.8％，第二名财付通增长至38.3％。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">自今年2月开始，Apple Pay（苹果支付）、小米支付、华为支付等近场支付在银联的协调下陆续加入战局。此外，美团点评于9月26日全资收购第三方支付公司钱袋宝，获得了第三方支付牌照。亦有市场传闻称滴滴出行也有收购支付牌照的意愿，这些新进入者也会使市场竞争更为激烈。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">金融行业是一个服务型行业，它不像诸多其他行业需要提供一种核心服务就可以做大规模，金融需要生态支持。一位互联网金融领域投资人向《财经》记者分析，如果蚂蚁金服要想支撑750亿美元的估值，它不能仅有支付工具，必须通过自建、投资收购、合作等方式来拓展各类金融业务。这才有可能撑起蚂蚁金服整体750亿美元的估值。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">基于这些原因，蚂蚁金服自独立以来，便积极通过投资、并购来构建其金融服务生态，而不是像BAT那样等到成熟之后再去投资，这一点是蚂蚁金服更为特殊，也更为主动之处。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">蚂蚁金服的投资布局，在某种意义上预示了这家公司的未来。</p><p style="white-space: normal;"><strong>昨天、今天、明天，你我都在不断的改变 &nbsp;&nbsp;</strong></p><p style="white-space: normal;"><strong>加入SiteServer，我们一起去探索未来！&nbsp;<img src="/upload/images/2017/7/213544804.png" title="image.png" alt="image.png"/></strong></p><p><br/></p>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <li class="previous"><a href="/contents/5/15.html"><i class="icon-arrow-left"></i> 上一篇</a></li>
+         
+          <li>
+            <a href="/channels/5.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          <li class="next"><a href="/contents/5/13.html">下一篇 <i class="icon-arrow-right"></i></a></li>
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

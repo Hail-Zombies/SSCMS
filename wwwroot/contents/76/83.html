@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/76.html">单位二</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">刚发布了新产品，维基解密就要揭 Google 的老底？</h1>
+        <h1 style="text-align:center;margin-top: 10px;">刚发布了新产品，维基解密就要揭 Google 的老底？</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-17 16:21:03
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：单位二</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Google 大部分的新产品发布，在媒体对围绕关于外观、参数和体验的连篇累牍的报道之后，最终无一例外都要落到一个结论上：Google 希望能够在让更多的用户加入自己的生态系统，进而，卖出更多的广告。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">即便是这一次以 Google Pixel 为主打的 Made By Google 硬件产品发布，也不例外。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">媒体和舆论的报道再一次重复了以往 Google 产品的传播模式：外观如何、使用体验如何、参数都是怎样的，Google 为什么做这些产品呢？Google 为什么自己做硬件呢？Google 要推助手，Google 要用户，Google 要广告。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">但是在这一次 Google 的产品发布中，却严重缺乏了创新。如果我们仔细看 Google 推出的一系列硬件产品的话，VR、家居和手机，都是在对标各自的竞争对手，VR 和手机领域的太多了，家居显然是 Amazon Echo。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">换句话说，Google 是在继 Android 成功抄袭 iPhone 之后，希望在 VR 和智能家居领域复制他们的成功经验。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">强大的 Google 公关在硅谷也在紧锣密鼓地布局，在 Made By Google 的发布会开始后不久，著名科技媒体 The Verge 就发布了多篇详细的产品介绍文章，其中还包括一篇超长的特稿，专门写 Google 为什么做硬件。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Google 已经不是具有创新精神的 Google——其实 Google 早就不是以前的那个 Google。这都要从一年前说起：</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">2015 年 8 月末，Google 宣布将对企业架构进行调整，“伞形公司”&nbsp;Alphabet 浮出水面，旗下的搜索等主要业务与研发投资部门分离。这样做的目的，据联合创始人 Larry Page 表示，是为了能够更好地促进创新，让 Google 更加专注地做事，拥有“创业公司般的活力”。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">一年后，我们来看 Google 和 Alphabet 的创新成果如何？</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">Google 就不说了，Alphabet 在过去一年里带给我们的新东西，乏善可陈。Google 气球的进展缓慢，Google 无人驾驶汽车连续出现事故，Google 的 X Labs 几乎很久没有让人眼前一亮的可行项目出现了。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">近日，美国媒体<a href="http://abcnews.go.com/Technology/wireStory/year-alphabet-great-google-moonshots-42485174" target="_blank" style="box-sizing: border-box; background-color: transparent; padding: 0px; margin: 0px; outline: none; text-decoration-line: none;">发文</a>质疑 Alphabet 的表现，不过也指出，Alphabet 旗下的公司虽然营收并不高，但是该公司的股价在过去一年上升了 25%。Alphabet 拒绝对其第一年的表现置评。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">除了 Google 和 Alphabet 的创新乏力之外，这家曾经号称“不作恶”的公司，最近成为 WikiLeaks 创始人阿桑奇的“<a href="http://www.recode.net/2016/10/5/13167726/assange-wikileaks-hates-google-clinton-leaks-hack" target="_blank" style="box-sizing: border-box; background-color: transparent; padding: 0px; margin: 0px; outline: none; text-decoration-line: none;">打击目标</a>”。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">“没人希望承认 Google 现在变得又庞大又邪恶，”阿桑奇这样在他的声明中写道，“但是 Google 已经变了，在施密特就任 Google 首席执行官期间，这家公司和美国权力结构最阴暗的部分相勾结，并扩张成为了一个全球性、跨地域的侵略性超大型利益集团。”</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">阿桑奇表示，WikiLeaks 将在未来的几个星期里公布和 Google 有关的秘密文件。</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 20px; padding: 0px; outline: none; color: rgb(51, 51, 51); font-family: Arial, Helvetica, &quot;microsoft yahei&quot;, 微软雅黑, &quot;Hiragino Sans GB&quot;, 宋体, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">在这样的背景下，用户对&nbsp;Google 发布的新产品——尤其是智能家居产品——在隐私方面的担忧就更严重了。有用户在 Twitter 上尖锐地指出，“Google 想让我们掏钱买在家里一直开着的麦克风……”</p><p style="white-space: normal;"><strong>昨天、今天、明天，你我都在不断的改变 &nbsp;&nbsp;</strong></p><p style="white-space: normal;"><strong>加入SiteServer，我们一起去探索未来！&nbsp;<img src="/upload/images/2017/7/213816185.png" title="image.png" alt="image.png"/></strong></p><p><br/></p>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <li class="previous"><a href="/contents/76/84.html"><i class="icon-arrow-left"></i> 上一篇</a></li>
+         
+          <li>
+            <a href="/channels/76.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

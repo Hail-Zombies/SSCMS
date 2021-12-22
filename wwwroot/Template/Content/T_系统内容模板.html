@@ -18,28 +18,59 @@
 <body>
   <stl:include file="/include/head.html"></stl:include>
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="{Stl.SiteUrl}/">首页</a></li>
+    <li><stl:a context="channel"></stl:a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center"><stl:content type="Title"></stl:content></h1>
+        <h1 style="text-align:center;margin-top: 10px;"><stl:content type="Title"></stl:content></h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            <stl:content type="Author"></stl:content>
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            <stl:content type="LastModifiedDate" formatstring="yyyy-MM-dd HH:mm:ss"></stl:content>
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：<stl:channel type="Title"></stl:channel></dt>
+      </dl>
     </header>
 
     <section class="content">
       <stl:content type="Content"></stl:content>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <stl:navigation type="PreviousContent">
+            <li class="previous"><stl:a><i class="icon-arrow-left"></i> 上一篇</stl:a></li>
+          </stl:navigation>
+         
+          <li>
+            <stl:a context="channel"> <i class="icon-list-ul"></i> 目录</stl:a> 
+          </li>
+          
+          <stl:navigation type="NextContent">
+            <li class="next"><stl:a>下一篇 <i class="icon-arrow-right"></i></stl:a></li>
+          </stl:navigation>
+      </ul>
+    </footer>
+
   </article>
   <stl:include file="/include/foot.html"></stl:include>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

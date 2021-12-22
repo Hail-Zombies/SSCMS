@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/15.html">科技专题</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">首例特斯拉Autopilot死亡事故发生在美国？央视称今年1月中国已发生致死事故</h1>
+        <h1 style="text-align:center;margin-top: 10px;">首例特斯拉Autopilot死亡事故发生在美国？央视称今年1月中国已发生致死事故</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-14 10:09:40
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：科技专题</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p><img class="alignnone size-full wp-image-170" src="/upload/images/2017/6/2017250358.jpg" alt="171635484713-png" width="701" height="450"/></p><p>注：14日下午央视《法治在线》栏目曝光称，今年1月时在中国已经发生一起特斯拉车主使用Autopilot功能时发生车祸死亡事件，但并未对外披露。目前所知的全球首例Autopilot致死事故是5月发生在美国佛罗里达州。特斯拉目前仍未回应此事。</p><p>以下内容来自新浪科技，原标题为《<a href="http://tech.sina.com.cn/it/2016-09-14/doc-ifxvukhv8402791.shtml" target="_blank">央视曝光国内首起特斯拉自动驾驶致死事故：未躲闪撞前车</a>》，作者李根、晓璐。</p><hr/><p>9月14日下午消息，央视《<a href="http://video.sina.com.cn/view/250748967.html" target="_blank">法治在线</a>》栏目今日曝光，特斯拉自动驾驶在中国出现首例死亡事故，这是特斯拉在中国遭遇首例自动驾驶车祸事故后，被披露出的首例死亡事故。</p><p>据央视报道一位23岁特斯拉中国车主男子驾车在京港澳高速河北邯郸段公路行驶，因前车躲避障碍物，该男子躲闪不及撞上道路清扫车发生车祸。</p><p>据央视报道称，23岁的高姓车主在部队从事司机工作，并有上万公里的安全行驶记录。但据事故后行程记录仪中的视频分析，事故发生时，特斯拉处于“定速”的状态，并未能识别躲闪而撞上前车。</p><p>现场交警调查，碰撞发生前，涉车祸特斯拉并没有进行任何躲避和减速，保持车速撞上前方正在施工作业的道路清扫车尾部。</p><p>据央视报道，该事故发生于今年1月份，当时并未对外披露。也就是说，发生在中国的该事故，早于美国佛罗里达州的Model S发生事故死亡事件，是特斯拉自动驾驶的全球首例致死事故。</p><p>8月，中国一位特斯拉车主在北京五环路上使用自动驾驶系统时亦因识别问题遭遇车祸，但所幸只是发生车身剐蹭。</p><p>今年5月7日，一名美国佛罗里达州的Model S车主在使用自动驾驶模式时发生事故死亡。特斯拉方面给出的说法是：“较高的卡车车身，特殊的道路位置，以及罕见的环境导致Model S撞向了卡车，卡车底部撞到了Model S的前挡风玻璃。”</p><p>特斯拉表示，Autopilot功能与飞机的自动巡航功似，可以在条件合适的情况下使用。但是“司机仍然需要对汽车负责，也是汽车的最终控制者”。需要 说明的是，“自动驾驶”系统一直是特斯拉对外销售宣传的关键点之一，但随着事故频发，现在已经开始在弱化并更名为“Autopilot 自动辅助驾驶”。</p><p>此前，特斯拉遭遇首例中国事故后，特斯拉中国官方曾向<a href="http://tech.sina.com.cn/it/2016-09-14/doc-ifxvukhv8402791.shtml" target="_blank">新浪科技</a>作出说明称：说明：特斯拉Autopilot的设计初衷是为给予驾驶员以更大的自 信、提升行车安全和增加高速路途中的驾驶乐趣。特斯拉Autopilot代表着目前最为先进的Autopilot技术，但并不意味着它已实现全自动驾驶，或能全权代替和担当驾驶员的作用和职责。自发布Autopilot的空中升级以来，我们在介绍给顾客功能使用的同时，也在不断的提醒驾驶员应在启用自动驾 驶功能时保持警觉和在必要时随时接管车辆。</p><p>就此次被央视曝光的特斯拉自动驾驶死亡事故，新浪科技第一时间询问了特斯拉方面，对方尚未回应。</p><p>目前特斯拉已有两起自动驾驶功能致死事故被曝光。</p><p><br/></p>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <li class="previous"><a href="/contents/15/58.html"><i class="icon-arrow-left"></i> 上一篇</a></li>
+         
+          <li>
+            <a href="/channels/15.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          <li class="next"><a href="/contents/15/56.html">下一篇 <i class="icon-arrow-right"></i></a></li>
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

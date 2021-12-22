@@ -1,0 +1,74 @@
+tr {
+    background: rgb(255 255 255)
+}
+
+#swiper_1.swiper {
+    width: 100%;
+}
+
+#swiper_1 .my-bullet-active {
+    background: #ffffff;
+    opacity: 1;
+}
+
+#swiper_1 .swiper-slide .swiper-caption {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    height: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: #000;
+    opacity: 0.5;
+}
+
+#swiper_1 .swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+#swiper_1 .swiper-slide-a {
+    font-size: 16px;
+    text-decoration: underline;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 11;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    /*值为clip表示剪切，ellipsis时为显示省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#swiper_2 swiper {
+    z-index: unset;
+}
+
+#swiper_2-pagination a {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#swiper_2-pagination .swiper-pagination-bullet {
+    border-radius: 0%;
+    height: inherit;
+    background: unset;
+    opacity: 1;
+}
+
+#swiper_2-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #b3d4fc;
+}

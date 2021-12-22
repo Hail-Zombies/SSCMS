@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/15.html">科技专题</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">苹果计划收购超跑品牌迈凯伦，也许苹果汽车更值得期待了？</h1>
+        <h1 style="text-align:center;margin-top: 10px;">苹果计划收购超跑品牌迈凯伦，也许苹果汽车更值得期待了？</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-14 10:09:40
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：科技专题</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p><img class="size-full wp-image-333 aligncenter" src="/upload/images/2017/6/2017254920.jpg" alt="timg" width="600" height="457"/></p><p>昨晚（9月21日晚）据《金融时报》报道称，苹果已就收购事宜接洽著名超级跑车制造商迈凯伦（McLaren），这可能会快速推动苹果电动汽车项目的进度。</p><p>《金融时报》的消息人表示，迈凯伦有望达到10-15亿英镑的估值，如果全资收购可以实现，这将是苹果自30亿美元收购Beats后的最大笔投资，也是继今年苹果10亿美元投资滴滴出行后，又一笔在出行领域最大的投资。</p><p>迈凯伦汽车成立于1989年，与1963年建立的F1方程式赛车迈凯伦车队同属于迈凯伦集团，一直以来，都用F1赛车技术造超跑作为主要卖点。1994年，迈凯伦汽车的首款超跑也被直接命名为F1，实测最高速度达到386.5km/h，这项速度记录直到2005年才被打破。</p><p></p><p>迈凯伦汽车早年的发展并不快。1994年的F1问世后，直到2011年才推出了McLaren MP4-12C跑车，但近年来则保持高速发展，连续推出了6系列超跑、5系列运动跑车以及P1系列混合动力超跑——这也许是苹果看中迈凯伦的原因之一。《金融时报》援引迈凯伦技术已公布的最新财报，其2014年营收为2.65亿英镑，税前亏损2260万英镑。</p><p><img class="size-full wp-image-331 aligncenter" src="/upload/images/2017/6/2017255106.jpg" alt="tim2g" width="539" height="380"/></p><p>而苹果汽车方面，虽然库克一直没有公布过苹果汽车的相关计划路线，但苹果在试图切入汽车领域是公认的。2014年起，苹果从传统车厂及特斯拉挖角，打造了一支数百名工程师、设计师的汽车制造团队，但是项目看起来并不顺利，<a href="http://www.huxiu.com/article/163553/1.html" target="_blank">负责人Steve Zadesky已于今年早些时候离职</a>，而《金融时报》的报道称最近几周陆续有几十名员工走人。对此，分析认为苹果汽车的思路，可能从整车制造转向了无人驾驶等车载系统的开发上。</p><p>但收购迈凯伦，可能会为苹果汽车带来新的整车制造思路，当然也可能仅仅是将苹果的智能系统与迈凯伦未来的全电动跑车结合。但不论怎样，苹果如果真能拿下迈凯伦，强强联合是值得期待的，毕竟迈凯伦这个品牌也足够性感了。</p><p><br/></p><ul class="commentlist comment-list clear block list-paddingleft-2"></ul>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <li class="previous"><a href="/contents/15/57.html"><i class="icon-arrow-left"></i> 上一篇</a></li>
+         
+          <li>
+            <a href="/channels/15.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          <li class="next"><a href="/contents/15/55.html">下一篇 <i class="icon-arrow-right"></i></a></li>
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

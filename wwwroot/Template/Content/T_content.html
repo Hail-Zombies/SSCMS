@@ -18,21 +18,34 @@
 <body>
   <stl:include file="/include/head.html"></stl:include>
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="{Stl.SiteUrl}/">首页</a></li>
+    <li><stl:a>{Channel.Title}</stl:a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center"><stl:content type="Title"></stl:content></h1>
+        <h1 style="text-align:center;margin-top: 10px;"><stl:content type="Title"></stl:content></h1>
 
         <dl class="dl-inline">
             <dt>作者：</dt>
-            <dd id="author">
+            <dd>
+              <stl:content type="Author"></stl:content>
             </dd>
             <dt>最后修订：</dt>
-            <dd id="update_time">
+            <dd>
+              <stl:content type="LastModifiedDate"></stl:content>
+            </dd>
+            <dd>
+              <stl:content type="Content"></stl:content>
             </dd>
             <dd style="float:right" id="class">
             </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+            <dt style="float:right"></dt>
+            <dd>栏目：<stl:channel type="Title"></stl:channel>
+            </dd>
+          </dl>
     </header>
 
     <section class="content">

@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/14.html">娱乐专题</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">湖南卫视内部不允许跟风做节目？《全员加速中》明年不会再出现了</h1>
+        <h1 style="text-align:center;margin-top: 10px;">湖南卫视内部不允许跟风做节目？《全员加速中》明年不会再出现了</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-14 10:09:39
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：娱乐专题</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p><br/></p><p>注：电视广告今年上半年同比下降了3.8%。严酷的现实是，传统电视的赢利能力在削弱。传统电视的衰落也让电视台人才纷纷出走自立门户，制作播放中心向互联网偏移。湖南广播电视台副台长兼总编辑、湖南卫视总监张华立接受《中国新闻出版广电报》的采访，分享了他眼中的电视业该何去何从。</p><p>本文来自《中国新闻出版广电报》，原标题为<a href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f7326d8c964e2083d25f93130a1c187ba8ec7f79471999822b2f5bf8545ce8f33265377522bc8cc8fe4ad7a6932c2e8e30340746c01e4cc75cf28b102ad650e34d9dd80e96bce743e7b9d3a3c82524dd22076df1839c2c0103ca1ee76546f4d0995f142f07cb9e2714fa4e7659885234a136f9f7431910f6f3ca5d3cc33dd11106e7a822c73f05b463b3691f3332a15bb078465637f73e21e8454d13e39a4a945a6e3620a13cb5&p=b4769a4783934eae5ca2dc3d5151&newp=b4769a4787831bb508e2957a155292695912c10e3cd5c44324b9d71fd325001c1b69e3b823281603d4c6786c15e9241dbdb239256b5571f7c1d2&user=baidu&fm=sc&query=%BA%FE%C4%CF%CE%C0%CA%D3+%CE%D2%CA%C7%CF%C2%CE%E72%B5%E3%D6%D3%B5%C4%CC%AB%D1%F4&qid=db929e5600007c7f&p1=1" target="_blank">《湖南卫视张华立：湖南卫视是“下午2点钟的太阳”》</a>，转载，有删减。</p><hr/><p>“双引擎”平行战略</p><p><strong>《中国新闻出版广电报》：受新媒体的冲击，电视广告逐年下降，湖南卫视有没有危机感？</strong></p><p>张华立：尽管现在湖南卫视的赢利能力还是很强的，但是我们认为电视走下坡路的趋势是无法逆转的，所以我们很早就打造了芒果TV。目前，我们是双引擎平行战略，一个引擎是湖南卫视，是传统媒体；第二个引擎是芒果TV，是新媒体。作为省级卫视，我们一定要做好主流媒体应该做的事。</p><p><strong>《中国新闻出版广电报》：当初做芒果TV，很多人不看好，现在看是正确的选择。</strong></p><p>张华立：就好比当年，湖南经视是中国电视的“四小龙”，湖南经视的人看不起湖南卫视的人，但那时我们台作出了一个重要决策，全台办卫视，全局保卫视，因为当时我们认为真正的增长空间在湖南卫视，绝对不在地面频道。如今10多年过去，大家看到地面频道生存非常艰难，甚至一些曾经很强势的地面频道广告收入下滑得很厉害。所以，不要等着让别人认同你的看法，做好你自己的事就行。要想做好一件事，就要老老实实，少说多做。</p><p><strong>《中国新闻出版广电报》：湖南人有敢为人先的精神和传统，比如自制节目不外售，全力打造了芒果TV。如今，芒果TV做大了，卫视该怎么走呢？</strong></p><p>张华立：湖南卫视一如既往，不仅要加强它的内容创新，还要加强它的营销能力，这跟新媒体发展是并行不悖的两件事情，只不过一个是“下午2点钟”，一个是“早晨9点钟”。不能说下午2点太阳就没有光芒了。下午2点钟，太阳很热，但到了下午四五点钟，太阳就会慢慢退去它的热度和收敛它的光芒。</p><p>跟风就是死路一条</p><p><strong>《中国新闻出版广电报》：今年以来，一线几大卫视推出了很多新节目，摆出咄咄逼人的阵势，你怎么看？</strong></p><p>张华立：我跟我们的内容策划人员包括湖南卫视的人，都讲过这个道理：不允许去做别人做过的节目。一个很典型的例子就是曾被我批评得很厉害的节目《全员加速中》，明年绝对不允许做了。就是说，湖南卫视、湖南广电永远要做自己的，绝对不能跟风，跟风就是死路一条。</p><p><strong>《中国新闻出版广电报》：中国的电视综艺节目近两三年来或是模仿或是引进，几乎把全世界好的综艺节目能玩的都玩一遍了，明年湖南卫视的新节目是怎么个玩法？</strong></p><p>张华立：现在我们正在讨论研究明年的节目，各种观点都有。很多人也都在问，可以肯定地说，明年我们推出的节目一定会有变化。</p><p>为人才打造未来</p><p><strong>《中国新闻出版广电报》：有段时间，某些电视台的核心策划团队出走的挺多，但湖南卫视很少出现这种现象，湖南台在人才管理方面的策略有哪些优长？</strong></p><p>张华立：这么多年，湖南台只走了3个制片人，并且我们策划团队的人都没有走，而别的台基本上都“空心化”了。道理很简单，要搞清楚这些做内容的人才从传统平台出走是为什么。其实就两条：第一条，传统平台实现不了他们的事业野心；第二条，他们的收入不如在市场上的多。</p><p>有很多人解读“出走”原因的时候认为应该把收入排在第一位，我带团队那么多年，在我看来，应该把“实现不了他的事业野心”放在第一位。这也是为什么我们这么多年要在内部鼓动做新媒体的原因，如果我们有一个很好的新媒体平台，他们还需要到社会上去找吗？</p><p><strong>《中国新闻出版广电报》：人们会发现湖南台的著名主持人有时候到别的台做主持。</strong></p><p>张华立：既然导入了一些市场机制，就要接受市场的一些游戏规则。当然，在此过程当中，肯定有冲突，也会有摩擦，但要权衡利弊，懂得妥协。所以，进入市场就意味着妥协，只要是利大于弊，甚至短期内弊大于利，但长期利大于弊，还是要选择利大于弊。</p><p><strong>《中国新闻出版广电报》：在购剧上，湖南台是怎么规避风险的？</strong></p><p>张华立：湖南台一年的购剧资金超过20亿元，因为电视的主要支撑还是电视剧。从2009年开始，我们就建立了联合购片机制，选购电视剧有一套完整的评估系统，即三方互相监督、互相制约，三方投票，达成一致才可以确定这个剧是买还是不能买。</p><p>三方当中，内部有两方，一方是播出平台，一方是总台专门负责咨询、买剧的，另外我们还聘请了市场评估机构作为我们的第三方。购买电视剧采取三方制衡的模式，能有效防止腐败，购剧失误的几率也比较小。</p><p><br/></p>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          <li class="previous"><a href="/contents/14/52.html"><i class="icon-arrow-left"></i> 上一篇</a></li>
+         
+          <li>
+            <a href="/channels/14.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          <li class="next"><a href="/contents/14/50.html">下一篇 <i class="icon-arrow-right"></i></a></li>
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>

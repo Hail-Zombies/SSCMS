@@ -19,6 +19,8 @@
 <script src="/zui/lib/jquery/jquery.js"></script>
 <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
 <script src="/zui/js/zui.min.js"></script>
+
+<script type="text/javascript" src="/js/site.js"></script>
     <link rel="stylesheet" href="/swiper/swiper-bundle.min.css">
 <script src="/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -142,6 +144,12 @@
     <div class="toolbar-icon">
         <ul style="list-style-type: none;">
             <li>
+                <a href="javascript:void(0);" onclick="back_history()">
+                    <i class="icon icon-chevron-sign-left icon-5x"
+                       style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
+                </a>
+            </li>
+            <li>
                 <a href="#anchor_top">
                     <i class="icon icon-chevron-sign-up icon-5x"
                        style="color: rgba(9, 61, 75);opacity: 0.5;"></i>
@@ -164,26 +172,47 @@
             <div class="container-fluid" style="margin-top: 1px; margin-bottom: 0px; ">
                 <!-- 内容容器 -->
 
-  <article class="article">
+  <ol class="breadcrumb">
+    <li><a href="/">首页</a></li>
+    <li><a href="/channels/22.html">模板使用说明</a></li>
+    <li class="active">文章</li>
+  </ol>
+
+  <article class="article" style="padding-top: 0;">
     <header>
-        <h1 style="text-align:center">模板使用说明</h1>
+        <h1 style="text-align:center;margin-top: 10px;">模板使用说明</h1>
 
         <dl class="dl-inline">
-            <dt>作者：</dt>
-            <dd id="author">
-            </dd>
-            <dt>最后修订：</dt>
-            <dd id="update_time">
-            </dd>
-            <dd style="float:right" id="class">
-            </dd>
-            <dt style="float:right">栏目：</dt>
-        </dl>
+          <dt>作者：</dt>
+          <dd>
+            
+          </dd>
+          <dt>最后修订：</dt>
+          <dd id="update_time">
+            2021-12-14 10:09:40
+          </dd>
+          <dd style="float:right" id="class">
+          </dd>
+          <dt style="float:right">栏目：模板使用说明</dt>
+      </dl>
     </header>
 
     <section class="content">
       <p>　　模板使用说明</p><p><br/></p><p>　　上个星期，我们提供了一套企业模板，这次提供一套自适应的站长模板，这套模板包含了搜索、登录注册板块、文章排行（评论排行、点击排行）、专题等板块。</p><p>　　首先我们拿到一个模板时，先观察一下它的大体结构（有多少模板页，栏目架构是怎么样的，跳转链接指向等情况）以及初步信息。比如这套模板，我们会发现它虽然模块不少，有评论、有注册登录、有搜索、有文章排行等模块，但它的结构还是比较简单的，模板页面数量少，首页、栏目页、文章内容页，栏目页还跟首页结构一样。我们分以下几个方面来阐述这套模板的使用说明：</p><ol class=" list-paddingleft-2"><li><p>首页(栏目页)</p></li><li><p>热评文章（评论管理系统）</p></li><li><p>文章页</p></li><li><p>专题</p></li><li><p>搜索页面</p></li><li><p>登录注册</p></li></ol><ol class=" list-paddingleft-2"><li><p>首页(栏目页)</p></li></ol><p>　　<img src="/upload/images/2017/6/3017118942.png" width="554" height="288" alt="E:airong资料公司参考资料软文70605官网模板girish论坛说明图片.png"/></p><ol class=" list-paddingleft-2"><ol class=" list-paddingleft-2" style="list-style-type: lower-alpha;"><li><p>站点属性</p></li></ol></ol><p>　　上图红色框框里的站点信息Logo广告位，我们在后台的设置管理——站点属性设置里可以看到,包括下面的详情页广告以及站点名称都是在这里更改 ，搜索和登录我们在五六章节里会说到。</p><p>　　Logo大小：140*60&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;广告位大小：1170*86&nbsp;&nbsp;</p><p>　　 详情广告位：765*89&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 微信二维码：258*258</p><p>　　<img src="/upload/images/2017/6/3017118952.png" width="535" height="393" alt=""/></p><p>　　1.2焦点滚动图</p><p>　　黄色框框里的图片滚动及图片列表，来自于资讯栏目（这次我们调取的是资讯栏目一级栏目里的信息）</p><p>　　<img src="/upload/images/2017/6/3017118962.png" width="505" height="405" alt="http://bbs.siteserver.cn/uploads/default/optimized/1X/9ee4a273e8f824ccb21b8a7cfdbc6129f3b5f4d6_1_623x500.png"/></p><p>　　1.3科技动态</p><p>　　<img src="/upload/images/2017/6/3017118972.png" width="528" height="543" alt=""/></p><p>　　我们可以看到，这个板块的信息调取用到了两属性，左侧这条新闻，用到的是热点、右侧用了推荐属性。左侧图片大小：367*245，右侧图片大小是132*85，图片比例相似，从维护方面来说，左右新闻都同属科技动态栏目，两边信息有互换位置的时候，所以我们取大比例尺寸，推荐科技动态栏目下的上传的图片大小都以367*245为参考。</p><p>　　 　&nbsp;</p><p>　　1.4最新文章</p><p>　　我们可以看到最新文章排行，调取了标题、图片、所属栏目、内容摘要、添加时间、内容标签等字段里的内容。图片位置大小：230*175，但因为这些信息有是会成为右侧的最热点击排行里的文章，那边图片位置大小是311*233，我们可以看到，比例和大小都相近，我们调取一个图片值就行，推荐上传图片大小：311*233</p><p>　　<img src="/upload/images/2017/6/3017118982.png" width="554" height="445" alt=""/></p><p>　　这里还有个需要我们值得注意的地方，就是调取范围。这里调取首页下除了友情链接和关于我们之外的所有栏目下的最新信息，我们把不想出现在最新文章列表里的栏目都加入“not”栏目组，我们可以看到调取规则是所有不属于栏目组“not”的、带图片的、最新的、20条最新内容。</p><p>　　&nbsp;</p><p>　　<img src="/upload/images/2017/6/3017118992.png" width="554" height="537" alt=""/></p><p>　　1.5 最热点击文章</p><p>　　<img src="/upload/images/2017/6/30171192.png" width="554" height="250" alt=""/></p><p>　　我们调取的是所有不属于栏目组“not”的、带图片的、点击量最高的13篇文章。</p><p>　　1.6友情链接</p><p>　　信息管理——内容管理——友情链接，我们调取的是标题和外链字段。</p><p>　　<img src="/upload/images/2017/6/301711912.png" width="554" height="173" alt=""/></p><p>　　&nbsp;</p><ol class=" list-paddingleft-2"><li><p>热评文章(评论管理系统)</p></li></ol><p>　　这个列表是按评论热度来排行的，我们在此刚好说一下我们的文章评论系统。</p><p>　　<img src="/upload/images/2017/6/301711922.png" width="554" height="348" alt=""/></p><p>　　首先我们在设置管理——评论管理设置里，找到相应的是否启用、是否匿名、是否需要审核等设置按钮。</p><p>　　<img src="/upload/images/2017/6/301711932.png" width="554" height="252" alt=""/></p><p>　　在内容管理里面的每一篇文章后我们都能看到相应的评论数量，可以对所有评论进行导出管理。</p><p>　　<img src="/upload/images/2017/6/301711942.png" width="554" height="224" alt=""/></p><p>　　如果设置了需要审核，那我们可以（在信息管理——评论审核）进行评论审核。</p><p>　　<img src="/upload/images/2017/6/301711952.png" width="554" height="203" alt=""/></p><ol class=" list-paddingleft-2"><li><p>文章页</p></li></ol><p>　　<img src="/upload/images/2017/6/301711962.png" width="554" height="405" alt=""/></p><p>　　头部的广告位我们在首页提到了，站点属性设置里，右侧的文章列表是随机调取的，调取规则是本栏目下是所有不属于栏目组“not”的、带图片的、随机的、7条内容。用的是Contents(http://stl.siteserver.cn/contents/index.html)的标签order=” Random”</p><p>　　&nbsp;</p><p>　　<img src="/upload/images/2017/6/301711972.png" width="554" height="639" alt=""/></p><p>　　评论我们在上面第二章节讲了，具体是否能匿名提交，由后台自行设置，前台评论完后，评论是否需要审核，最后出现在每篇文章的评论字段里。</p><p>　　上面的相关文章，我们调取的是相关推荐栏目的，也可以随机推荐，用标签是Contents里相关内容列表标签isRelatedContents(http://stl.siteserver.cn/contents/index.html)</p><p>　　<img src="/upload/images/2017/6/301711982.png" width="554" height="97" alt=""/></p><p>　　&nbsp;</p><p>　　&nbsp;</p><ol class=" list-paddingleft-2"><li><p>专题</p></li></ol><p>　　<img src="/upload/images/2017/6/301711992.png" width="554" height="388" alt=""/></p><p>　　专题分为娱乐专题和科技专题两个板块，在后台都能找到相应的栏目，我们只需要添加信息是加上必要的字段信息即可。</p><ol class=" list-paddingleft-2"><li><p>搜索页</p></li></ol><p>　　<img src="/upload/images/2017/6/3017119102.png" width="554" height="468" alt=""/></p><p>　　我们页面右上角可以看见搜索框，点击后会跳出一个搜索弹出窗口，输入我们想要搜索的内容，进入到搜索结果页，我们会发现搜索结果页跟我们的栏目列表页基本一样，左侧是搜索出来的内容列表，右侧是热评文章和最热点击文章排行。</p><ol class=" list-paddingleft-2"><li><p>注册登录</p></li></ol><p>　　点击登录后，会进入到我们SiteServer自带的用户中心里。</p><p>　　<img src="/upload/images/2017/6/3017119112.png" width="554" height="356" alt=""/></p><p>　　<img src="/upload/images/2017/6/3017119122.png" width="554" height="370" alt=""/></p><p>　　&nbsp;</p><p>　　</p><p>　　&nbsp;</p><p><br/></p>
     </section>
+
+    <footer>
+      <ul class="pager pager-justify">
+          
+         
+          <li>
+            <a href="/channels/22.html"> <i class="icon-list-ul"></i> 目录</a> 
+          </li>
+          
+          
+      </ul>
+    </footer>
+
   </article>
   <!-- 内容容器结束 -->
             </div>
@@ -206,11 +235,12 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function back_history() {
-        history.back();
-    }
-</script>
+  <script>
+    $(document).ready(function () {
+      var update_time=document.getElementById("update_time");
+      update_time.innerText=parseDateTime(update_time.innerText);
+    })
+  </script>
 </body>
 
 </html>
