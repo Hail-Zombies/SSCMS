@@ -20,7 +20,7 @@
 
   <ol class="breadcrumb">
     <li><a href="{Stl.SiteUrl}/">首页</a></li>
-    <li class="active"><stl:a>{Channel.Title}</stl:a></li>
+    <li class="active">{Channel.Title}</li>
   </ol>
 
   
@@ -28,30 +28,50 @@
   <div class="col-xs-8">
       <div class="container">
           <div class="items">
-            <stl:pageContents>
+            <stl:pageContents pageNum="10" order="lastEditDate">
               <div class="item">
                 <div class="item-heading">
-                    <div class="pull-right"><span class="text-muted">`+ parseDateTime(data[i].Update_time) + `</span> &nbsp;</div>
-                    <h4><a href="/Article?id=`+ data[i].Id + `"  target="_blank">` + data[i].Title + `</a></h4>
+                    <div class="pull-right">
+                            <span class="text-muted">
+                                <stl:content type="LastModifiedDate" formatstring="yyyy-MM-dd HH:mm:ss"></stl:content>
+                            </span> &nbsp; <a href="javascript:;" class="text-muted"><i class="icon icon-hand-up"></i><stl:content type="Hits"></stl:content></a>
+                    </div>
+                    <h4><stl:a title="{Content.Title}" target="_blank"><stl:content type="Title"></stl:content></stl:a></h4>
                 </div>
                 <div class="item-content">
-                    <div class="text">`+ data[i].Abstract + `</div>
+                    <stl:content type="Summary"></stl:content>
                 </div>
               </div>
             </stl:pageContents>
           </div>
           <footer>
               <ul class="pager">
-                  <li class="previous"><a href="#">« 上一页</a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">⋯</a></li>
-                  <li><a href="#">6</a></li>
-                  <li class="active"><a href="#">7</a></li>
-                  <li><a href="#">8</a></li>
-                  <li><a href="#">9</a></li>
-                  <li><a href="#">⋯</a></li>
-                  <li><a href="#">12</a></li>
-                  <li class="next"><a href="#">下一页 »</a></li>
+                <stl:pageItem type="PreviousPage">
+                    <stl:yes>
+                        <li class="previous"><a href="{Current.Url}" >上一页</a></li>
+                    </stl:yes>
+                    <stl:no>
+                        <li><a disabled href="javascript:;" style="color: black;" class="btn disabled">« 上一页</a></li>
+                    </stl:no>
+                </stl:pageItem>
+                    
+                <stl:pageItem type="PageNavigation" listNum="5">
+                    <stl:yes>
+                        <li><a href="{Current.Url}">{Current.Num}</a></li>
+                    </stl:yes>
+                    <stl:no>
+                        <li class="active"><span>{Current.Num}</span></li>
+                    </stl:no>
+                </stl:pageItem>
+                
+                <stl:pageItem type="NextPage">
+                    <stl:yes>
+                    <li class="next"><a href="{Current.Url}">下一页 »</a></li>
+                    </stl:yes>
+                    <stl:no>
+                    <li><a disabled href="javascript:;" style="color: black;" class="btn disabled">下一页 »</a></li>
+                    </stl:no>
+                </stl:pageItem>
               </ul>
           </footer>
       </div>
@@ -64,6 +84,7 @@
               </div>
               <div class="container news">
                   <ul>
+                      ......即将上线
                       <!-- <li>
                           <a href="Article">
                               HTML5
@@ -99,6 +120,7 @@
               </div>
               <div class="container news">
                   <ul>
+                    ......即将上线
                       <!-- <li>
                           <a href="Article">
                               HTML5
@@ -134,6 +156,7 @@
               </div>
               <div class="container news">
                   <ul>
+                    ......即将上线
                       <!-- <li>
                           <a href="Article">
                               HTML5

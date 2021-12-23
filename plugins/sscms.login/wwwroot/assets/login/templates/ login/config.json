@@ -1,0 +1,8 @@
+﻿{
+  "name": " login",
+  "publisher": "",
+  "main": "index.html",
+  "icon": "images/icon.png",
+  "type": "login",
+  "description": null
+}
